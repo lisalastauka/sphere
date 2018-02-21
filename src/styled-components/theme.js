@@ -2,38 +2,41 @@ export default {
   fonts: {
     graphik: {
       regular: 'GraphikLC Regular',
-      medium: 'GraphikLC Medium',
+      medium: 'GraphikLC Medium'
     },
   },
   fontSize: {
-    extraSmall: '0.9rem',
-    smaller: '1rem',
-    small: '1.2rem',
-    regular: '1.4rem',
-    default: '1.6rem',
+    small: '1.4rem',
+    regular: '1.6rem',
     medium: '1.8rem',
-    standard: '2rem',
-    large: '2.2rem',
-    larger: '2.4rem',
-    extraLarge: '4.8rem'
+    large: '2.4rem',
+    larger: '3.6rem',
+    giant: '4.8rem'
   },
   lineHeight: {
-    extraSmall: 1,
-    small: 1.5,
-    regular: 2,
-    medium: 2.5,
-    large: 3,
-    extraLarge: 3.5,
+    extraSmall: '20px',
+    small: '22px',
+    regular: '24px',
+    medium: '26px',
+    large: '28px',
+    larger: '54px',
   },
   colors: {
     textColor: '#1A3869',
+    lightGrey: '#8F9399',
+    border: '#D8D8D8',
   },
   opacity: {
-    text07: 0.7,
+    text08: 0.8,
     text06: 0.6,
     text05: 0.5,
+    text04: 0.4,
     text03: 0.3,
-    text01: 0.1,
+  },
+  gradient: {
+    background: 'linear-gradient(274deg, #618ef1, #e6664a 92%, #fbb933)',
+    backgroundClip: 'text',
+    textFillColor: 'transparent'
   },
   size: {
     giant: 120,
@@ -41,12 +44,12 @@ export default {
     tablet: 48,
     phone: 30,
   },
+  borderRadius: {
+    regular: '3px',
+    medium: '5px',
+  },
   boxShadow: {
-    raised: '0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.1)',
-    activeArea: '0 2rem 4rem 0 rgba(0, 0, 0, 0.1)',
-    overlay: '0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.1)',
-    promo: '0 0.2rem 0.4rem 0 rgba(34, 19, 77, 0.4)',
-    footerCart: '0 0 1rem 0 rgba(0, 0, 0, 0.08)',
+    button: '0 10px 15px 0 rgba(0, 0, 0, 0.1);'
   },
   zIndex: {
     modal: 6,

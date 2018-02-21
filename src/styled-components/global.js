@@ -51,6 +51,10 @@ export default injectGlobal`
   h1 {
     font-family: ${theme.fonts.graphik.medium};
     font-size: ${theme.fontSize.extraLarge};
+    background: linear-gradient(274deg, #618ef1, #e6664a 92%, #fbb933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 350px;
   }
 
   *,
