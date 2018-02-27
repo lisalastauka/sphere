@@ -1,0 +1,12 @@
+<svg width="50" height="47" viewBox="0 0 50 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>M Copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-353 -1780)">
+<g id="M Copy">
+<use xlink:href="#path0_fill" transform="translate(353.939 1780.64)" fill="#F3B73E"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 45.659L 0 0L 13.6988 0L 24.389 28.4171L 34.9511 0L 48.3938 0L 48.3938 45.659L 38.0877 45.659L 38.0877 13.6019L 25.4132 45.659L 22.0205 45.659L 9.28189 13.6019L 9.28189 45.659L 0 45.659Z"/>
+</defs>
+</svg>
