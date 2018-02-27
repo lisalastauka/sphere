@@ -12,6 +12,8 @@ export default injectGlobal`
   #root {
     font-family: ${theme.fonts.graphik.regular}, sans-serif;
     font-display: swap;
+    line-height: ${theme.lineHeight.regular};
+    color: ${theme.colors.textColor};
   }
 
   html {
@@ -21,21 +23,31 @@ export default injectGlobal`
   }
 
   body {
-    font-size: 1.6rem;
+    font-size: ${theme.fontSize.regular};
     min-height: 100%;
-    color: ${theme.colors.textColor};
     background-color: ${theme.colors.bg};
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 
+  p {
+    margin: 10px 0;
+    font-family: ${theme.fonts.graphik.regular};
+    line-height: ${theme.lineHeight.regular};
+    font-size: ${theme.fontSize.medium};
+    color: ${theme.colors.textColor};
+  }
+
   small {
-    font-size: ${theme.fontSize.regular};
+    font-family: ${theme.fonts.graphik.regular};
+    line-height: ${theme.lineHeight.extraSmall};
+    font-size: ${theme.fontSize.small};
+    color: ${theme.colors.textSmall};
   }
 
   a {
-    color: ${theme.colors.purple};
+    color: ${theme.colors.link};
     text-decoration: none;
-    font-family: ${theme.fonts.graphik.regular};
+    font-family: ${theme.fonts.graphik.medium};
     transition: ${theme.transition};
 
     &:focus,
@@ -48,13 +60,52 @@ export default injectGlobal`
     }
   }
 
+  b {
+    font-family: ${theme.fonts.graphik.medium};
+  }
+
   h1 {
     font-family: ${theme.fonts.graphik.medium};
-    font-size: ${theme.fontSize.extraLarge};
-    background: linear-gradient(274deg, #618ef1, #e6664a 92%, #fbb933);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: 350px;
+    font-size: ${theme.fontSize.giant};
+    line-height: ${theme.lineHeight.larger};
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: ${theme.fonts.graphik.medium};
+    font-size: ${theme.fontSize.larger};
+    line-height: ${props => props.theme.lineHeight.larger};
+    margin: 20px 0;
+    letter-spacing: -0.38px;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: ${theme.fontSize.large};
+    font-family: ${theme.fonts.graphik.medium};
+    line-height: ${theme.lineHeight.medium};
+    margin: 10px 0;
+  }
+
+  h4 {
+    font-size: ${theme.fontSize.medium};
+    font-family: ${theme.fonts.graphik.medium};
+    line-height: ${theme.lineHeight.medium};
+    margin: 0 0 10px;
+  }
+
+  h5 {
+    font-size: ${theme.fontSize.regular};
+    font-family: ${theme.fonts.graphik.medium};
+    line-height: ${theme.lineHeight.medium};
+    margin: 0 0 10px;
+  }
+
+  h6 {
+    font-size: ${theme.fontSize.small};
+    font-family: ${theme.fonts.graphik.medium};
+    line-height: ${theme.lineHeight.medium};
+    margin: 0 0 10px;
   }
 
   *,

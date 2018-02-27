@@ -22,9 +22,16 @@ export default {
     larger: '54px',
   },
   colors: {
-    textColor: '#1A3869',
-    lightGrey: '#8F9399',
-    border: '#D8D8D8',
+    textLight: 'rgb(47,76,128)',
+    textSmall: '#8F9399',
+    textColor: 'rgb(26,56,105)',
+    textBtn: 'rgb(63,134,249)',
+    bg: 'rgb(249,249,249)',
+    side: 'rgb(255,255,255)',
+    lightBlue: 'rgb(78,123,255)',
+    btn: 'rgb(25, 108, 255)',
+    link: '#0B51C4',
+    footer: 'rgb(69,94,205)',
   },
   opacity: {
     text08: 0.8,
@@ -33,17 +40,16 @@ export default {
     text04: 0.4,
     text03: 0.3,
   },
-  gradient: {
-    background: 'linear-gradient(274deg, #618ef1, #e6664a 92%, #fbb933)',
-    backgroundClip: 'text',
-    textFillColor: 'transparent'
-  },
   size: {
     giant: 120,
     desktop: 64,
     tablet: 48,
     phone: 30,
   },
+  colored: {
+    gradient: '-webkit-background:-webkit-gradient(linear, 272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background:-webkit-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-moz-background:-moz-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-o-background:-o-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background:linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background-clip: text;-webkit-text-fill-color: transparent;'
+  }
+  ,
   borderRadius: {
     regular: '3px',
     medium: '5px',
