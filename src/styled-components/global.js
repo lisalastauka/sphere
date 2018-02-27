@@ -137,12 +137,12 @@ export default injectGlobal`
     /* stylelint-disable */
     @font-face {
       font-family: ${theme.fonts.graphik.regular};
-      src: url('/fonts/graphikLC/GraphikLC-Regular.otf');
+      src: url('fonts/graphikLC/GraphikLC-Regular.otf');
     }
 
     @font-face {
     font-family: ${theme.fonts.graphik.medium};
-      src: url('/fonts/graphikLC/GraphikLC-Medium.otf');
+      src: url('fonts/graphikLC/GraphikLC-Medium.otf');
     }
 
   `;
