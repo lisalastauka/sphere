@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import Link from '../Link/styled';
+import Button, { Group } from '../Button/styled';
+import media from './../../styled-components/media';
+import { Row , Col } from 'react-flexbox-grid';
 
 export const Gradient = styled.div`
   height: 5px;
@@ -30,16 +33,20 @@ export const H3 = styled.h3`
 export const Box = styled.div`
   margin-top: 20px;
   width: fit-content;
-  background: rgba(43,83,170, 0.05);
+  background: rgba(233, 237, 248, 0.9);
   border-radius: 5px;
+  position: absolute;
+  z-index: 1;
 `;
 
 export const Block = styled.div`
   display: inline-block;
-  padding: 10px 20px 20px;
-  height: 90px;
+  padding: 10px;
   margin: 0;
   width: fit-content;
+  ${media.tablet`
+    padding: 10px 20px 20px;
+  `}
   h2 {
     margin: 0;
   }
@@ -51,48 +58,78 @@ export const Block = styled.div`
   }
 `;
 
-export const Carousell = styled.div`
+export const Slides = styled.div`
   position: relative;
   margin: auto;
-  width: 720px;
+  width: 100%;
+  max-width: 720px;
   height: 260px;
   margin-bottom: 140px;
+
+  ${Group} {
+    white-space: nowrap;
+    display: none;
+    ${media.tablet`
+      display: block;
+    `}
+  }
 `;
 
 export const Slide = styled.div`
   position: absolute;
   margin: auto;
-  height: 160px;
-  width: 720px;
-  padding: 30px;
+  width: 100%;
   background: ${props => props.theme.colors.side};
   border-radius: 5px;
   box-shadow: 0px 10px 30px rgba(21, 17, 97, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.1);
   z-index: 3;
-  top: 105px;
+  top: 30px;
   font-size: ${props => props.theme.fontSize.regular};
   font-family: ${props => props.theme.fonts.graphik.medium};
+  ${media.tablet`
+    top: 105px;
+    ${props => props.backward && `
+      top: 0;
+    `}
+    ${props => props.center && `
+      top: 45px;
+    `}
+  `}
   ${props => props.center && `
     z-index: 2;
-    width: 640px;
-    margin: 0 40px;
-    top: 45px;
+    padding: 30px;
+    width: 88%;
+    max-width: 640px;
+    margin: 0 6%;
+    top: 15px;
     h5 {
       opacity: 0.7;
     }
   `}
+
   ${props => props.backward && `
     font-size: ${props.theme.fontSize.small};
     padding: 20px 30px;
     z-index: 1;
-    width: 540px;
-    margin: 0 90px;
+    width: 75%;
+    max-width: 540px;
+    margin: 0 13%;
     top: 0;
     h6 {
       opacity: 0.5;
     }
   `}
+
+  > ${Button} {
+    ${media.tablet`
+      display: none;
+    `}
+  }
 `;
+
+export const Inner = styled.div`
+  padding: 30px;
+`
 
 export const Conditions = styled.div`
   ul {
@@ -118,8 +155,11 @@ export const Conditions = styled.div`
 
 export const Size = styled.div`
   padding: 25px;
-  height: 400px;
   border-radius: 5px;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 
   :hover {
     background: white;
@@ -131,10 +171,10 @@ export const Size = styled.div`
   }
 
   ul {
-    height: 120px;
     list-style: none;
     padding: 0;
     margin: 0;
+    flex: 1 0 auto;
   }
 
   li {
@@ -144,6 +184,12 @@ export const Size = styled.div`
 
   small {
     margin-bottom: 30px;
+    white-space: nowrap;
+  }
+
+  button {
+    white-space: nowrap;
+    padding: 13px;
   }
 
   div {
@@ -153,7 +199,6 @@ export const Size = styled.div`
 `
 
 export const Footer = styled.div`
-  width: 100%;
   padding: 75px 0 100px;
   background-color: ${props => props.theme.colors.footer};
   * {
@@ -167,6 +212,26 @@ export const Links = styled.div`
     margin-bottom: 20px;
     display: inline-block;
   }
+`;
+
+export const AboutCard = styled(Row)`
+  img {
+    width: calc(100% + 40px);
+    margin: -10px -20px;
+    ${media.tablet`
+      width: 400px;
+      margin-left: -35px;
+      margin-top: -14px;
+    `}
+  }
+`;
+
+export const Card = styled.div`
+  margin-bottom: 30px;
+  ${media.tablet `
+    height: 85px;
+    margin-bottom: 25px;
+  `}
 `;
 
 export const Side = styled.div`
@@ -198,4 +263,26 @@ export const Side = styled.div`
     margin-bottom: 10px;
     margin-left: 20px;
   }
+`;
+
+export const Modes = styled(Row)`
+  display: none;
+  ${media.desktop`
+    display: flex;
+  `}
+`
+
+export const CarouselBox = styled.div`
+  max-width: calc(100vw);
+  margin: 0 -2rem;
+  overflow: hidden;
+  display: block;
+  ${media.desktop`
+    display: none;
+  `}
+`;
+
+
+export const CarouselItem = styled.div`
+  padding: 2rem;
 `;

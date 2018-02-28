@@ -19,6 +19,13 @@ export default styled.button`
     }
   `}
 
+  ${props => props.footer &&`
+    background: transparent;
+    color: ${props.theme.colors.textBtn};
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid rgba(25, 108, 255, 0.4);
+  `}
+
   ${props => props.opaque &&`
     width: 200px;
     text-align: left;
@@ -35,7 +42,7 @@ export default styled.button`
   `}
 
   img {
-    display: inline; 
+    display: inline;
     width: 30px;
     height: 30px;
   }

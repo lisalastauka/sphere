@@ -9,7 +9,9 @@ export default {
     small: '1.4rem',
     regular: '1.6rem',
     medium: '1.8rem',
+    default: '2rem',
     large: '2.4rem',
+    bitlarger: '2.8rem',
     larger: '3.6rem',
     giant: '4.8rem'
   },
@@ -19,6 +21,7 @@ export default {
     regular: '24px',
     medium: '26px',
     large: '28px',
+    bitlarger: '30px',
     larger: '54px',
   },
   colors: {
@@ -48,11 +51,9 @@ export default {
   },
   colored: {
     gradient: '-webkit-background:-webkit-gradient(linear, 272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background:-webkit-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-moz-background:-moz-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-o-background:-o-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background:linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background-clip: text;-webkit-text-fill-color: transparent;'
-  }
-  ,
-  borderRadius: {
-    regular: '3px',
-    medium: '5px',
+  },
+  border: {
+    radius: '5px',
   },
   boxShadow: {
     button: '0 10px 15px 0 rgba(0, 0, 0, 0.1);'

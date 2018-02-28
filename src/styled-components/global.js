@@ -1,5 +1,6 @@
 import { injectGlobal } from 'styled-components';
 import { normalize } from 'polished';
+import media from './media';
 
 import theme from './theme';
 
@@ -16,6 +17,10 @@ export default injectGlobal`
     color: ${theme.colors.textColor};
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${theme.fonts.graphik.medium};
+  }
+
   html {
     font-size: 62.5%;
     height: 100%;
@@ -30,11 +35,16 @@ export default injectGlobal`
   }
 
   p {
-    margin: 10px 0;
-    font-family: ${theme.fonts.graphik.regular};
-    line-height: ${theme.lineHeight.regular};
-    font-size: ${theme.fontSize.medium};
+    margin: 0;
     color: ${theme.colors.textColor};
+    line-height: ${theme.lineHeight.extraSmall};
+    font-size: ${theme.fontSize.small};
+    ${media.tablet`
+      margin: 10px 0;
+      line-height: ${theme.lineHeight.regular};
+      font-size: ${theme.fontSize.medium};
+    `}
+
   }
 
   small {
@@ -56,7 +66,7 @@ export default injectGlobal`
     }
 
     &:focus {
-      opacity: ${props => props.theme.opacity.text07};
+      opacity: ${theme.opacity.text07};
     }
   }
 
@@ -65,45 +75,51 @@ export default injectGlobal`
   }
 
   h1 {
-    font-family: ${theme.fonts.graphik.medium};
-    font-size: ${theme.fontSize.giant};
-    line-height: ${theme.lineHeight.larger};
+    font-size: ${theme.fontSize.bitlarger};
+    line-height: ${theme.lineHeight.bitlarger};
     margin-bottom: 20px;
+    ${media.tablet`
+      font-size: ${theme.fontSize.giant};
+      line-height: ${theme.lineHeight.larger};
+    `}
   }
 
   h2 {
-    font-family: ${theme.fonts.graphik.medium};
-    font-size: ${theme.fontSize.larger};
-    line-height: ${props => props.theme.lineHeight.larger};
+    font-size: ${theme.fontSize.large};
+    line-height: ${theme.lineHeight.bitlarger};
     margin: 20px 0;
-    letter-spacing: -0.38px;
-    line-height: 42px;
+    ${media.tablet`
+      letter-spacing: -0.38px;
+      font-size: ${theme.fontSize.larger};
+      line-height: ${theme.lineHeight.larger};
+    `}
   }
 
   h3 {
-    font-size: ${theme.fontSize.large};
-    font-family: ${theme.fonts.graphik.medium};
-    line-height: ${theme.lineHeight.medium};
-    margin: 10px 0;
+    font-size: ${theme.fontSize.default};
+    line-height: ${theme.lineHeight.regular};
+    margin: 5px 0;
+    ${media.tablet`
+      margin: 10px 0;
+      font-size: ${theme.fontSize.large};
+      line-height: ${theme.lineHeight.medium};
+    `}
   }
 
   h4 {
     font-size: ${theme.fontSize.medium};
-    font-family: ${theme.fonts.graphik.medium};
     line-height: ${theme.lineHeight.medium};
     margin: 0 0 10px;
   }
 
   h5 {
     font-size: ${theme.fontSize.regular};
-    font-family: ${theme.fonts.graphik.medium};
     line-height: ${theme.lineHeight.medium};
     margin: 0 0 10px;
   }
 
   h6 {
     font-size: ${theme.fontSize.small};
-    font-family: ${theme.fonts.graphik.medium};
     line-height: ${theme.lineHeight.medium};
     margin: 0 0 10px;
   }
