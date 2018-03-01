@@ -3,7 +3,7 @@ import media from './../../styled-components/media';
 import { Row } from 'react-flexbox-grid';
 
 export const AboutCard = styled(Row)`
-  img {
+  /* img {
     width: calc(100% + 40px);
     margin: -10px -20px;
     ${media.tablet`
@@ -11,7 +11,7 @@ export const AboutCard = styled(Row)`
       margin-left: -35px;
       margin-top: -14px;
     `}
-  }
+  } */
 `;
 
 export const Card = styled.div`

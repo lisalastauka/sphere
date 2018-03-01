@@ -1,28 +1,75 @@
-.App {
-  text-align: center;
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  20%  { opacity:1; }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  20%  { opacity:1; }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  20%  { opacity:1; }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  20%  { opacity:1; }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+    animation-duration: 3s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.promo img {
+  width: 864px;
+  margin-left: 800px;
+  position: relative;
+  margin-bottom: 20px;
+  transition: all 1s ease-out;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.promo--inViewport img {
+  margin-left: -40px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.phone img {
+  width: 279px;
+  margin-left: 1600px;
+  margin-bottom: 20px;
+  transition: all 2s ease-out;
 }
 
-.App-intro {
-  font-size: large;
+.phone--inViewport img {
+  margin-left: -40px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.card img {
+  margin: -14px -20px -10px 800px;
+  width: 400px;
+  transition: all 1s ease-out;
+}
+
+.card--inViewport img {
+  margin-left: -35px;
+}
+
+.account img {
+  margin: -14px -20px -10px 35px;
+  width: 100px;
+  transition: all 1s ease-out;
+}
+
+.account--inViewport img {
+  width: 360px;
+  margin-left: -35px;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Col } from 'react-flexbox-grid';
 import Colored from './../Colored';
 import { AboutCard, Card } from './styled';
+import Appear from '../Appear';
 
 export default () => (
   <AboutCard style={{ marginBottom: '156px' }}>
@@ -26,9 +27,11 @@ export default () => (
     <Col xs={12} md={6}>
       <Card>
         <h3><Colored>Карта для бизнеса</Colored></h3>
-        <p>Управление лимитами, смс-информирование<br /> и бесплатный выпуск</p>
+        <p>Управление лимитами, смс-информирование и бесплатный выпуск</p>
       </Card>
-      <img alt='' src='images/card.png'/>
+      <Appear className='card'>
+        <img alt='' src='images/card.png'/>
+      </Appear>
     </Col>
   </AboutCard>
 );

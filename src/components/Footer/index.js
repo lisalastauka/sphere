@@ -6,11 +6,8 @@ import { Footer, Links } from './styled';
 
 export default () => (
   <Footer>
-    <Row around='xs' style={{ margin: '0 auto', maxWidth: '1280px'}}>
-      <Col
-        xs={8}
-        style={{ maxWidth: '860px' }}
-      >
+    <Row around='xs' style={{ margin: '0 auto', maxWidth: '1280px', overflow: 'hidden'}}>
+      <Col xs={12} sm={8} md={9} style={{ padding: '0 84px' }}>
         <Row>
           <Col xs>
             <h3>Ответим на ваши вопросы</h3>
@@ -18,7 +15,7 @@ export default () => (
           <Col xs style={{textAlign: 'right', marginBottom: '50px'}}>
             <small>Или позвоните по бесплатному номеру</small>
             <br />
-            <Link href='tel:88005007065'>8 800 500 70 65</Link>
+            <Link href='tel:88005000305'>8 800 500 03 05</Link>
           </Col>
           {/*<img src='images/chat.png' style={{width: '860px', height: '220px', marginBottom: '50px'}} />*/}
         </Row>
@@ -69,7 +66,7 @@ export default () => (
           Банковские услуги предоставляются Акционерным обществом «БКС — Инвестиционный Банк», Генеральная лицензия ЦБ РФ № 101 от 15.12.2014 г. Выдана без ограничения срока действия. Официальный сайт http://www.bcs-bank.com. Услуги по размещению денежных средств во вклады предоставляются Акционерным общество «БКС — Инвестиционный Банк», а также иными кредитными организациями - партнерами Акционерного общества «БКС — Инвестиционный Банк».
         </p>
       </Col>
-      <Col xs={4} style={{ maxWidth: '400px' }} />
+      <Col sm={4} md={3} />
     </Row>
   </Footer>
 );

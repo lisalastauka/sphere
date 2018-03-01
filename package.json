@@ -5,6 +5,7 @@
   "homepage": "http://lisalastauka.github.io/sphere",
   "dependencies": {
     "ajv": "^6.2.0",
+    "in-viewport": "^3.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",

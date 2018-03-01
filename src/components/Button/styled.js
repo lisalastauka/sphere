@@ -49,6 +49,7 @@ export default styled.button`
 
   ${props => props.wide &&`
     width: 100%;
+    margin-bottom: 10px;
   `}
 
   ${props => props.small &&`
