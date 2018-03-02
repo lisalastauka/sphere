@@ -16,25 +16,4 @@ export default styled.div`
   ${media.desktop`
     display: flex;
   `}
-
-  ul {
-    list-style: none;
-    padding: 0 0 0 30px;
-    margin: 0 0 50px;
-  }
-
-  li {
-    position: relative;
-    list-style-type: none;
-    margin: 15px 0;
-  }
-  li:before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: -30px;
-    width: 25px;
-    height: 20px;
-    background: url('images/check.svg') no-repeat;
-  }
 `

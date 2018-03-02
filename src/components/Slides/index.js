@@ -5,7 +5,7 @@ import { Slides, Slide, Inner } from './styled';
 import Button, { ButtonGroup } from './../Button';
 
 export default () => (
-  <div>
+  <div id="slides" >
     <h2>Можно работать без <Colored>бухгалтера</Colored></h2>
     <p style={{ marginBottom: '40px' }}>
       Посчитаем налоги и отправим отчетность. Напомним когда <br/> нужно заплатить налоги и взносы, чтобы сэкономить.
@@ -24,17 +24,17 @@ export default () => (
                 Оплатите страховые взносы до 31 марта 2018 года на сумму 8 096,25₽, чтобы уменьшить сумму авансового платежа за I квартал.
               </small>
             </Col>
-            <Col xs={12} sm={6} md={5} >
+            <Col xs={12} sm={6} md={5} style ={{ display: 'flex', justifyContent: 'flex-end'}} >
               <ButtonGroup>
-                <Button outline type="button">Оплатить</Button>
-                <Button outline small type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <Button style={{padding: '13px 38px'}} inactive disabled outline type="button">Оплатить</Button>
+                <Button inactive disabled outline small type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   &#8226; &#8226; &#8226;
                 </Button>
               </ButtonGroup>
             </Col>
           </Row>
         </Inner>
-        <Button footer wide type="button">Оплатить</Button>
+        <Button disabled footer type="button">Оплатить</Button>
       </Slide>
     </Slides>
   </div>

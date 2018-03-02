@@ -3,7 +3,7 @@ import { Row , Col } from 'react-flexbox-grid';
 import Carousel from './../Carousel';
 
 export default () => (
-  <div>
+  <div id="document">
     <h2>Создавайте и подписывайте документы онлайн</h2>
     <Row style={{backgroundSize: 'contain', background: 'url(images/document.png) 90% center / 27% no-repeat'}}>
     <Col xs={12} md={7}>

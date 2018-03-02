@@ -30,6 +30,15 @@
     animation-duration: 3s;
 }
 
+.progress div {
+  width: 0;
+  transition: all 2s ease-out;
+}
+
+.progress--inViewport div {
+  width: 100%;
+}
+
 .promo img {
   width: 864px;
   margin-left: 800px;
@@ -54,7 +63,7 @@
 }
 
 .card img {
-  margin: -14px -20px -10px 800px;
+  margin: -14px -20px 0 800px;
   width: 400px;
   transition: all 1s ease-out;
 }
@@ -72,4 +81,20 @@
 .account--inViewport img {
   width: 360px;
   margin-left: -35px;
+}
+
+.bank li, >small {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear, height 0.5s linear;
+}
+
+.bank--inViewport li, >small {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }

@@ -22,8 +22,11 @@ export default styled.button`
   ${props => props.footer &&`
     background: transparent;
     color: ${props.theme.colors.textBtn};
+    cursor: default;
+    width: 100%;
     border-radius: 0 0 4px 4px;
     border-top: 1px solid rgba(25, 108, 255, 0.4);
+    margin-bottom: 0;
   `}
 
   ${props => props.opaque &&`
@@ -52,9 +55,28 @@ export default styled.button`
     margin-bottom: 10px;
   `}
 
+  ${props => props.submit &&`
+    width: 100%;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+    background: ${props.theme.colors.bigBtn};
+  `}
+
   ${props => props.small &&`
     width: auto;
     padding: 13px;
+  `}
+
+  ${props => props.inactive &&`
+    width: auto;
+    cursor: default;
+    padding: 13px;
+    :hover {
+      background: inherit;
+      color: ${props.theme.colors.textBtn};
+    }
   `}
 `;
 

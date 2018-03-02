@@ -6,6 +6,6 @@ import { Logo } from './../Logo';
 export default () => (
   <Row between='xs'>
     <Logo />
-    <Link style={{marginRight: '60px'}} small href='tel:88005000305'>8 800 500 03 05</Link>
+    <Link small href='tel:88005000305'>8 800 500 03 05</Link>
   </Row>
 );

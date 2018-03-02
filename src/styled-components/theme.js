@@ -22,6 +22,7 @@ export default {
     medium: '26px',
     large: '28px',
     bitlarger: '30px',
+    muchlarger: '44px',
     larger: '54px',
   },
   colors: {
@@ -33,6 +34,7 @@ export default {
     side: 'rgb(255,255,255)',
     lightBlue: 'rgb(78,123,255)',
     btn: 'rgb(25, 108, 255)',
+    bigBtn: 'rgb(63, 134, 249)',
     link: '#0B51C4',
     footer: 'rgb(69,94,205)',
   },

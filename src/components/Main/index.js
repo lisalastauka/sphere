@@ -1,36 +1,39 @@
 import React from 'react';
-import { Row , Col } from 'react-flexbox-grid';
-import TopBar from './../TopBar';
-import Header from './../Header';
-import Slides from './../Slides';
-import AboutCard from './../AboutCard';
-import Window from './../Window';
-import Promo from './../Promo';
-import Document from './../Document';
-import Conditions from './../Conditions';
-import Tarifs from './../Tarifs';
-import Footer from './../Footer';
-import SideBar from './../SideBar';
-import { Gradient } from './styled';
+import { Col } from 'react-flexbox-grid';
+import Appear from '../Appear';
+import TopBar from '../TopBar';
+import Header from '../Header';
+import Slides from '../Slides';
+import AboutCard from '../AboutCard';
+import Accounts from '../Accounts';
+import Promo from '../Promo';
+import Document from '../Document';
+import Conditions from '../Conditions';
+import Tarifs from '../Tarifs';
+import Footer from '../Footer';
+import SideBar from '../SideBar';
+import { Gradient, Container } from './styled';
 
 export default () => (
-  <div>
+  <div style={{overflow: 'hidden'}}>
     <SideBar />
-    <Gradient />
-    <Row around='xs' style={{ margin: '0 auto', maxWidth: '1280px', overflow: 'hidden'}}>
-      <Col xs={12} lg={9} style={{ padding: '0 84px' }}>
+    <Appear className='progress'>
+      <Gradient />
+    </Appear>
+    <Container around='xs'>
+      <Col xs={12} lg={8}>
         <TopBar />
         <Header />
         <Promo />
         <AboutCard />
         <Slides />
-        <Window />
+        <Accounts />
         <Document />
         <Conditions />
         <Tarifs />
       </Col>
       <Col lg={3} />
-    </Row>
+    </Container>
     <Footer />
   </div>
 );

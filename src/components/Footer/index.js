@@ -3,11 +3,12 @@ import { Row , Col } from 'react-flexbox-grid';
 import Link from '../Link';
 import Button from './../Button';
 import { Footer, Links } from './styled';
+import { Container } from '../Main/styled';
 
 export default () => (
   <Footer>
-    <Row around='xs' style={{ margin: '0 auto', maxWidth: '1280px', overflow: 'hidden'}}>
-      <Col xs={12} sm={8} md={9} style={{ padding: '0 84px' }}>
+    <Container>
+      <Col xs={12} sm={8} md={9}>
         <Row>
           <Col xs>
             <h3>Ответим на ваши вопросы</h3>
@@ -23,10 +24,12 @@ export default () => (
           <Row>
             <Col xs={4}>
               <Link href='#'>Смотреть тарифы</Link>
+              <br />
               <Link href='#'>Отделения банка</Link>
             </Col>
             <Col xs={4}>
               <Link href='#'>Документы</Link>
+              <br />
               <Link href='#'>Банковская лицензия</Link>
             </Col>
           </Row>
@@ -67,6 +70,6 @@ export default () => (
         </p>
       </Col>
       <Col sm={4} md={3} />
-    </Row>
+    </Container>
   </Footer>
 );

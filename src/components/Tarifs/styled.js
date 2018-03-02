@@ -47,7 +47,6 @@ export const Size = styled.div`
   }
 `
 
-
 export const Modes = styled(Row)`
   display: none;
   ${media.desktop`

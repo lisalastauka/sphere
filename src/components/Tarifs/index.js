@@ -7,7 +7,7 @@ import Button from './../Button';
 import { Size, CarouselBox, CarouselItem, Modes } from './styled';
 
 export default () => (
-  <div>
+  <div id="tarifs">
     <Modes>
       <Col xs={4}>
         <Size>

@@ -2,7 +2,7 @@ import React from 'react';
 import Appear from '../Appear';
 
 export default () => (
-  <div>
+  <div id="account">
     <h2>Счета всех банков в одном окне</h2>
     <p style={{ marginBottom: '40px' }}>
       Добавляйте счета других банков чтобы видеть весь бизнес целиком.

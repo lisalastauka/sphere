@@ -19,7 +19,14 @@ class Appear extends Component {
 
   componentDidMount() {
     // watch for viewport entry
+    const trigger = document.getElementById(this.props.trigger);
+
     const el = ReactDOM.findDOMNode(this);
+
+    if (trigger) {
+      this.watcher = inViewport(trigger, this.setVisible);
+      return;
+    }
     if (el) {
       this.watcher = inViewport(el, this.setVisible);
     } else {
