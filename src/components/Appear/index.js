@@ -24,6 +24,7 @@ class Appear extends Component {
     const el = ReactDOM.findDOMNode(this);
 
     if (trigger) {
+      console.log(trigger);
       this.watcher = inViewport(trigger, this.setVisible);
       return;
     }

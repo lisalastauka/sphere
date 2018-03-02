@@ -83,7 +83,7 @@
   margin-left: -35px;
 }
 
-.bank li, >small {
+.bank li, .bank>small {
   height: 0px;
   visibility: hidden;
   margin: 0;
@@ -91,7 +91,7 @@
   transition: visibility 0s, opacity 1s linear, height 0.5s linear;
 }
 
-.bank--inViewport li, >small {
+.bank--inViewport li, .bank--inViewport>small {
   height: 24px;
   margin: 15px 0;
   display: block;
