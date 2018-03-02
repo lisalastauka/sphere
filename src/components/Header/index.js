@@ -1,6 +1,5 @@
 import React from 'react';
 import Colored from '../Colored';
-import Carousel from './../Carousel';
 
 const texts = ["предпринимателю", "фрилансеру", "владельцу бизнеса"];
 

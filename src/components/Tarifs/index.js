@@ -128,7 +128,7 @@ export default () => (
       </Carousel>
     </CarouselBox>
     <div style={{margin: '20px 0 180px'}}>
-      <Link href='#' ><img style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
+      <Link href='#' ><img  alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
     </div>
   </div>
 );
