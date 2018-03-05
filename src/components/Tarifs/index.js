@@ -66,10 +66,11 @@ export default () => (
     <CarouselBox>
       <Carousel
         {...{
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
           autoplay: true,
+          infinite: true,
         }}
       >
         <CarouselItem>

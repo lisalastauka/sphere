@@ -13,6 +13,8 @@ export const Size = styled.div`
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
 
   :hover {
     background: white;
@@ -61,7 +63,7 @@ export const Modes = styled(Row)`
 `
 
 export const CarouselBox = styled.div`
-  max-width: calc(100vw);
+  min-width: 600px;
   margin: 0 -2rem 20px;
   overflow: hidden;
   display: block;

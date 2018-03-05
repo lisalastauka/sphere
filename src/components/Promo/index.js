@@ -22,11 +22,11 @@ export default () => (
       <Box>
         <Block>
           <small>Банк работает</small>
-          <h2>с 1995 <p style={{display: 'inline'}}>года</p></h2>
+          <h2>с 1989 <p style={{display: 'inline'}}>года</p></h2>
         </Block>
         <Block>
-          <small>Рейтинг <Link href='#'>НРА</Link></small>
-          <h2>A+</h2>
+          <small>Эксперт <Link href='#'>РА</Link></small>
+          <h2>ruBBB+</h2>
         </Block>
       </Box>
     </Col>

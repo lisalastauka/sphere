@@ -4,13 +4,13 @@ import Button, { Group } from '../Button/styled';
 
 export default styled.div`
   margin-bottom: 70px;
-  ${media.tablet`
+  ${media.desktop`
     margin-bottom: 140px;
   `}
 
   p {
     margin-bottom: 20px;
-    ${media.tablet`
+    ${media.desktop`
       margin-bottom: 40px;
     `}
   }
@@ -23,14 +23,14 @@ export const Slides = styled.div`
   max-width: 720px;
   height: 340px;
 
-  ${media.tablet`
+  ${media.desktop`
     height: 260px;
   `}
 
   ${Group} {
     white-space: nowrap;
     display: none;
-    ${media.tablet`
+    ${media.desktop`
       display: block;
     `}
   }
@@ -82,7 +82,7 @@ export const Slide = styled.div`
   `}
 
   > ${Button} {
-    ${media.tablet`
+    ${media.desktop`
       display: none;
     `}
   }

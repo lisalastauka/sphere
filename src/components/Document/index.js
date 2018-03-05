@@ -1,19 +1,20 @@
 import React from 'react';
 import { Col } from 'react-flexbox-grid';
-import Carousel from './../Carousel';
-import Container, { CarouselBox, Inner } from './styled';
+import Container, { CarouselBox, Inner, ShadowCarousel } from './styled';
 
 export default () => (
   <Container id="document">
     <h2>Создавайте и подписывайте документы онлайн</h2>
     <Inner>
-      <Col xs={12} md={7}>
+      <Col xs={12} md={7} style = {{
+        marginBottom: '-10%'
+      }}>
         <p>
-          Конструктор договоров, быстро соединит платеж <br />  с документом, а также вы сможете подписать его <br />   и проконтролировать сроки платежа.
+          Все договоры, акты, счета и&nbsp;остальные документы создаются автоматически, подписываются электронной подписью и&nbsp;привязываются к&nbsp;платежам, чтобы контролировать сроки оплаты и&nbsp;оформлять сделки быстро и&nbsp;правильно.
         </p>
       </Col>
       <CarouselBox>
-        <Carousel
+        <ShadowCarousel
           {...{
             speed: 500,
             slidesToShow: 3,
@@ -29,7 +30,7 @@ export default () => (
           <img style={{padding: '0 15px'}} alt='' src={'images/contract.png'}/>
           <img style={{padding: '0 15px'}} alt='' src={'images/contract.png'}/>
           <img style={{padding: '0 15px'}} alt='' src={'images/contract.png'}/>
-        </Carousel>
+        </ShadowCarousel>
       </CarouselBox>
   </Inner>
 </Container>

@@ -31,7 +31,7 @@ export default class Header extends React.Component {
           Умный банк, который помогает{' '}<b className='animate-flicker'>{text}</b>
         </h1>
         <p>
-          Электронные помощники, добавление счетов других банков, <br/> бухгалтерия в одном окне
+          Счет, создание и&nbsp;обмен электронными документами, расчет налогов, зарплаты и&nbsp;отчетность в&nbsp;одном окне
         </p>
       </HeaderContainer>
     );

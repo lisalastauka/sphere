@@ -24,7 +24,9 @@ export const Links = styled.div`
 
 export const Column = styled(Col)`
   ${media.tablet`
-    text-align: right;
     margin-bottom: 50px;
+  `}
+  ${props => props.right && media.tablet`
+    text-align: right;
   `}
 `

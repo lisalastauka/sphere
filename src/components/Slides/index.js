@@ -21,12 +21,12 @@ export default () => (
         <Inner>
           <h5>Рекомендуем заплатить страховые взносы за I квартал</h5>
           <Row>
-            <Col xs={12} sm={6} md={7}>
+            <Col xs={12} lg={7}>
               <small>
                 Оплатите страховые взносы до 31 марта 2018 года на сумму 8 096,25₽, чтобы уменьшить сумму авансового платежа за I квартал.
               </small>
             </Col>
-            <Col xs={12} sm={6} md={5} style ={{ display: 'flex', justifyContent: 'flex-end'}} >
+            <Col xs={12} lg={5} style ={{ display: 'flex', justifyContent: 'flex-end'}} >
               <ButtonGroup>
                 <Button style={{padding: '13px 38px'}} inactive disabled outline type="button">Оплатить</Button>
                 <Button inactive disabled outline small type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

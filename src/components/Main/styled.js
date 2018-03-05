@@ -22,11 +22,11 @@ export const Gradient = styled.div`
 export const Container = styled(Row)`
    margin: 20px;
 
-   ${media.tablet`
+   ${media.desktop`
       margin: 0 100px;
    `}
 
-   ${media.desktopHD`
+   ${media.giant`
       max-width: 1280px;
       margin: 0 auto;
    `}

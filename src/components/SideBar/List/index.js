@@ -46,9 +46,6 @@ export default class List extends React.Component {
           <Appear trigger='card_2' className='card_2'>
             <li>Карта для бизнеса</li>
           </Appear>
-          <Appear trigger='card_3' className='card_3'>
-            <li>7% годовых на остаток</li>
-          </Appear>
           <Appear trigger='card_4' className='card_4'>
             <li>Большие лимиты на вывод</li>
           </Appear>

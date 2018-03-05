@@ -21,7 +21,7 @@ export default () => (
       <Gradient />
     </Appear>
     <Container around='xs'>
-      <Col xs={12} md={6} lg={8}>
+      <Col xs={12} lg={8}>
         <FullScreen>
           <TopBar />
           <Center>
@@ -36,7 +36,7 @@ export default () => (
         <Conditions />
         <Tarifs />
       </Col>
-      <Col md={4} lg={3} />
+      <Col lg={3} />
     </Container>
     <Footer />
   </div>

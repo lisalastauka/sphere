@@ -47,7 +47,6 @@ export default {
     text03: 0.3,
   },
   size: {
-    desktopHD: 180,
     giant: 120,
     desktop: 64,
     tablet: 48,
