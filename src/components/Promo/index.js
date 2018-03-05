@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row , Col } from 'react-flexbox-grid';
+import { Col } from 'react-flexbox-grid';
 import { BCS } from './../Logo';
 import Link from '../Link';
 import Appear from '../Appear';
-import { Side, Block, Box } from './styled';
+import Container, { Side, Block, Box, Phone, Laptop } from './styled';
 
 export default () => (
-  <Row style={{position: 'relative'}}>
+  <Container>
     <Col xs={6}>
       <Side>
         <p>
@@ -31,14 +31,16 @@ export default () => (
       </Box>
     </Col>
     <Col xs={6}>
-      <Appear className='promo'>
-        <img alt='' src='images/laptop.png'/>
-      </Appear>
-      <div style={{position: 'absolute', top: 0}}>
+      <Laptop>
+        <Appear className='promo'>
+          <img alt='' src='images/laptop.png'/>
+        </Appear>
+      </Laptop>
+      <Phone>
         <Appear className='phone'>
           <img alt='' src='images/phone.png'/>
         </Appear>
-      </div>
+      </Phone>
     </Col>
-  </Row>
+  </Container>
 );

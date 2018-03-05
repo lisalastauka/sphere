@@ -24,12 +24,12 @@ class Appear extends Component {
     const el = ReactDOM.findDOMNode(this);
 
     if (trigger) {
-      console.log(trigger);
       this.watcher = inViewport(trigger, this.setVisible);
       return;
     }
     if (el) {
-      this.watcher = inViewport(el, this.setVisible);
+      el.firstElementChild.onload =
+        this.watcher = inViewport(el, this.setVisible);
     } else {
       // fallback to visible
       this.setVisible();
@@ -44,7 +44,8 @@ class Appear extends Component {
 
   render() {
     const className = cx(this.props.className, this.state.inViewport && `${this.props.className}--inViewport`);
-    return <div className={className}>{ this.props.children }</div>;
+    const desktop =  document.body.getBoundingClientRect().width >= 1280;
+    return <div className={desktop ? className : ''}>{ this.props.children }</div>;
   }
 }
 

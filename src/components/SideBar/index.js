@@ -7,7 +7,7 @@ import SideBar from './styled';
 
 export default () => (
   <SideBar>
-    <Row between='xs' style={{ padding: '20px 40px', minHeight: '80px', borderBottom: '1px solid rgba(214,214,214,0.4)'}}>
+    <Row between='xs' style={{ padding: '20px 40px', minHeight: '85px', margin: 0, borderBottom: '1px solid rgba(214,214,214,0.4)'}}>
       <Col>
         <small style={{color: '#1A3869'}}>Скоро</small><br/>
         <small>Демо-доступ</small>

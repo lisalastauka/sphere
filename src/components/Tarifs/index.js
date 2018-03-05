@@ -4,10 +4,10 @@ import Carousel from './../Carousel';
 import Link from '../Link';
 import Button from './../Button';
 
-import { Size, CarouselBox, CarouselItem, Modes } from './styled';
+import Container, { Size, CarouselBox, CarouselItem, Modes } from './styled';
 
 export default () => (
-  <div id="tarifs">
+  <Container id="tarifs">
     <Modes>
       <Col xs={4}>
         <Size>
@@ -127,8 +127,6 @@ export default () => (
         </CarouselItem>
       </Carousel>
     </CarouselBox>
-    <div style={{margin: '20px 0 180px'}}>
-      <Link href='#' ><img  alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
-    </div>
-  </div>
+    <Link href='#' ><img  alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
+  </Container>
 );

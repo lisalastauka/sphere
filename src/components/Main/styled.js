@@ -4,7 +4,9 @@ import { Row } from 'react-flexbox-grid';
 
 export const Gradient = styled.div`
   height: 5px;
-  margin-bottom: 65px;
+  ${media.tablet`
+    margin-bottom: 30px;
+  `}
   -webkit-background:
     -webkit-gradient(linear, 270deg, #749EFB 0%, #E6664A 49.42%, #FBB933 100%);
   -webkit-background:
@@ -21,11 +23,26 @@ export const Container = styled(Row)`
    margin: 20px;
 
    ${media.tablet`
-      margin: 0 84px;
+      margin: 0 100px;
    `}
 
-   ${media.desktop`
+   ${media.desktopHD`
       max-width: 1280px;
       margin: 0 auto;
    `}
 `;
+
+export const FullScreen = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${media.tablet`
+    height: 100vh;
+  `}
+`;
+
+export const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: center;
+`

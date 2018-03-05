@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import media from './../../styled-components/media';
 import { Row } from 'react-flexbox-grid';
 
+export default styled.div`
+  margin-bottom: 140px;
+`;
+
 export const Size = styled.div`
   padding: 25px;
   border-radius: 5px;
@@ -16,6 +20,7 @@ export const Size = styled.div`
   }
 
   img {
+    width: fit-content;
     margin-bottom: 25px;
   }
 
@@ -49,6 +54,7 @@ export const Size = styled.div`
 
 export const Modes = styled(Row)`
   display: none;
+  margin-bottom: 20px;
   ${media.desktop`
     display: flex;
   `}
@@ -56,7 +62,7 @@ export const Modes = styled(Row)`
 
 export const CarouselBox = styled.div`
   max-width: calc(100vw);
-  margin: 0 -2rem;
+  margin: 0 -2rem 20px;
   overflow: hidden;
   display: block;
   ${media.desktop`

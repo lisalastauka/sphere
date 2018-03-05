@@ -3,18 +3,19 @@ import media from './../../styled-components/media';
 import { Row, Col } from 'react-flexbox-grid';
 
 export const AboutCard = styled(Row)`
-  margin-bottom: 156px;
-  margin-left: -20px;
-  margin-right: -20px;
-  /* img {
+  margin: 0 -20px 70px;
+  ${media.tablet`
+    margin: 0 -20px 140px;
+  `}
+
+  img {
     width: calc(100% + 40px);
     margin: -10px -20px;
     ${media.tablet`
+      margin: -14px -20px 0 0;
       width: 400px;
-      margin-left: -35px;
-      margin-top: -14px;
     `}
-  } */
+  }
 
   h3 {
     background: linear-gradient(274deg, #618ef1 0%, #e6664a 100%, #fbb933 100%);
@@ -24,9 +25,9 @@ export const AboutCard = styled(Row)`
 `;
 
 export const Card = styled.div`
-  margin-top: 30px;
+  margin: 0 0 30px;
   ${media.tablet `
-    margin-top: 60px;
+    margin: 60px 0 0;
   `}
 `;
 

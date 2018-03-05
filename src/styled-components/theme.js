@@ -27,10 +27,11 @@ export default {
   },
   colors: {
     textLight: 'rgb(47,76,128)',
-    textSmall: '#8F9399',
     textColor: 'rgb(26,56,105)',
+    textOpaque: 'rgba(26,56,105, 0.8)',
     textBtn: 'rgb(63,134,249)',
     bg: 'rgb(249,249,249)',
+    lightGrey: 'rgb(163, 175, 195)',
     side: 'rgb(255,255,255)',
     lightBlue: 'rgb(78,123,255)',
     btn: 'rgb(25, 108, 255)',
@@ -46,6 +47,7 @@ export default {
     text03: 0.3,
   },
   size: {
+    desktopHD: 180,
     giant: 120,
     desktop: 64,
     tablet: 48,

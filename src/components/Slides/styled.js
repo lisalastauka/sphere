@@ -2,13 +2,30 @@ import styled from 'styled-components';
 import media from './../../styled-components/media';
 import Button, { Group } from '../Button/styled';
 
+export default styled.div`
+  margin-bottom: 70px;
+  ${media.tablet`
+    margin-bottom: 140px;
+  `}
+
+  p {
+    margin-bottom: 20px;
+    ${media.tablet`
+      margin-bottom: 40px;
+    `}
+  }
+`;
+
 export const Slides = styled.div`
   position: relative;
   margin: auto;
   width: 100%;
   max-width: 720px;
-  height: 260px;
-  margin-bottom: 140px;
+  height: 340px;
+
+  ${media.tablet`
+    height: 260px;
+  `}
 
   ${Group} {
     white-space: nowrap;

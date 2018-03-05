@@ -1,20 +1,22 @@
 import React from 'react';
 import { Row , Col } from 'react-flexbox-grid';
 import Colored from './../Colored';
-import { Slides, Slide, Inner } from './styled';
+import Container, { Slides, Slide, Inner } from './styled';
 import Button, { ButtonGroup } from './../Button';
 
 export default () => (
-  <div id="slides" >
+  <Container id="slides" >
     <h2>Можно работать без <Colored>бухгалтера</Colored></h2>
-    <p style={{ marginBottom: '40px' }}>
+    <p>
       Посчитаем налоги и отправим отчетность. Напомним когда <br/> нужно заплатить налоги и взносы, чтобы сэкономить.
     </p>
     <Slides>
       <Slide backward >
-          <h6>Пора готовить декларацию для налоговой</h6>
+        <h6>Пора готовить декларацию для налоговой</h6>
       </Slide>
-      <Slide center ><h5>Пора готовить декларацию для налоговой</h5></Slide>
+      <Slide center >
+        <h5>Пора готовить декларацию для налоговой</h5>
+      </Slide>
       <Slide >
         <Inner>
           <h5>Рекомендуем заплатить страховые взносы за I квартал</h5>
@@ -37,5 +39,5 @@ export default () => (
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>
     </Slides>
-  </div>
+  </Container>
 );

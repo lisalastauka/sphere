@@ -40,10 +40,7 @@
 }
 
 .promo img {
-  width: 864px;
   margin-left: 800px;
-  position: relative;
-  margin-bottom: 20px;
   transition: all 1s ease-out;
 }
 
@@ -52,9 +49,7 @@
 }
 
 .phone img {
-  width: 279px;
   margin-left: 1600px;
-  margin-bottom: 20px;
   transition: all 2s ease-out;
 }
 
@@ -63,8 +58,7 @@
 }
 
 .card img {
-  margin: -14px -20px 0 800px;
-  width: 400px;
+  margin-left: 800px;
   transition: all 1s ease-out;
 }
 
@@ -83,7 +77,7 @@
   margin-left: -35px;
 }
 
-.bank li, .bank>small {
+.bank li {
   height: 0px;
   visibility: hidden;
   margin: 0;
@@ -91,7 +85,103 @@
   transition: visibility 0s, opacity 1s linear, height 0.5s linear;
 }
 
-.bank--inViewport li, .bank--inViewport>small {
+.bank--inViewport li {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.bank_1>small {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear, height 0.5s linear;
+}
+
+.bank_1--inViewport >small {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.bank_2 li {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 1s 0.5s linear, height 0.5s 0.5s linear;
+}
+
+.bank_2--inViewport li {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card_1 li {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s 1s linear, height 0.5s 1s linear;
+}
+
+.card_1--inViewport li {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card_2 li {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s 1.5s, opacity 1s 1.5s linear, height 0.5s 1.5s linear;
+}
+
+.card_2--inViewport li {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card_3 li {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 1s 2s linear, height 0.5s 2s linear;
+}
+
+.card_3--inViewport li {
+  height: 24px;
+  margin: 15px 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card_4 li {
+  height: 0px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  transition: visibility 0s 2.5s, opacity 1s 2.5s linear, height 0.5s 2.5s linear;
+}
+
+.card_4--inViewport li {
   height: 24px;
   margin: 15px 0;
   display: block;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Colored from '../Colored';
+import HeaderContainer from './styled';
 
 const texts = ["предпринимателю", "фрилансеру", "владельцу бизнеса"];
 
@@ -26,14 +26,14 @@ export default class Header extends React.Component {
   render () {
     const text = texts[this.state.count];
     return (
-      <div style={{ marginBottom: '20px' }}>
+      <HeaderContainer>
         <h1>
-          Умный банк, который помогает{' '}<span className='animate-flicker'><Colored>{text}</Colored></span>
+          Умный банк, который помогает{' '}<b className='animate-flicker'>{text}</b>
         </h1>
         <p>
           Электронные помощники, добавление счетов других банков, <br/> бухгалтерия в одном окне
         </p>
-      </div>
+      </HeaderContainer>
     );
   }
 }

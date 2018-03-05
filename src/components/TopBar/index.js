@@ -1,11 +1,14 @@
 import React from 'react';
-import { Row } from 'react-flexbox-grid';
 import Link from './../Link';
 import { Logo } from './../Logo';
+import Call from './styled';
 
 export default () => (
-  <Row between='xs'>
+  <div>
     <Logo />
-    <Link small href='tel:88005000305'>8 800 500 03 05</Link>
-  </Row>
+    <Call>
+      <small>Бесплатно по России</small><br/>
+      <Link small href='tel:88005000305'>8 800 500 03 05</Link>
+    </Call>
+  </div>
 );

@@ -12,7 +12,7 @@ import Conditions from '../Conditions';
 import Tarifs from '../Tarifs';
 import Footer from '../Footer';
 import SideBar from '../SideBar';
-import { Gradient, Container } from './styled';
+import { Gradient, Container, Center, FullScreen } from './styled';
 
 export default () => (
   <div style={{overflow: 'hidden'}}>
@@ -21,10 +21,14 @@ export default () => (
       <Gradient />
     </Appear>
     <Container around='xs'>
-      <Col xs={12} lg={8}>
-        <TopBar />
-        <Header />
-        <Promo />
+      <Col xs={12} md={6} lg={8}>
+        <FullScreen>
+          <TopBar />
+          <Center>
+            <Header />
+            <Promo />
+          </Center>
+        </FullScreen>
         <AboutCard />
         <Slides />
         <Accounts />
@@ -32,7 +36,7 @@ export default () => (
         <Conditions />
         <Tarifs />
       </Col>
-      <Col lg={3} />
+      <Col md={4} lg={3} />
     </Container>
     <Footer />
   </div>

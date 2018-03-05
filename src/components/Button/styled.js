@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './../../styled-components/media';
 
 export default styled.button`
   font-family: ${props => props.theme.fonts.graphik.regular};
@@ -23,6 +24,7 @@ export default styled.button`
     background: transparent;
     color: ${props.theme.colors.textBtn};
     cursor: default;
+    border: none;
     width: 100%;
     border-radius: 0 0 4px 4px;
     border-top: 1px solid rgba(25, 108, 255, 0.4);
@@ -30,7 +32,6 @@ export default styled.button`
   `}
 
   ${props => props.opaque &&`
-    width: 200px;
     text-align: left;
     padding: 15px 20px;
     height: 60px;
@@ -39,9 +40,16 @@ export default styled.button`
     background-color: rgba(234, 237, 242, 0.2);
     color: white;
     margin-right: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+
     :hover {
       background-color: rgba(234, 237, 242, 0.4);
     }
+  `}
+
+  ${props => props.opaque && media.tablet`
+    max-width: 200px;
   `}
 
   img {
@@ -58,6 +66,9 @@ export default styled.button`
   ${props => props.submit &&`
     width: 100%;
     margin-bottom: 10px;
+    font-size: ${props.theme.fontSize.medium};
+    font-family: ${props.theme.fonts.graphik.medium};
+    font-weight: 500;
     height: 60px;
     border-radius: 5px;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);

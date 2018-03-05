@@ -37,7 +37,7 @@ export default injectGlobal`
 
   p {
     margin: 0;
-    color: ${theme.colors.textColor};
+    color: ${theme.colors.textOpaque};
     line-height: ${theme.lineHeight.extraSmall};
     font-size: ${theme.fontSize.small};
     ${media.tablet`
@@ -45,14 +45,13 @@ export default injectGlobal`
       line-height: ${theme.lineHeight.regular};
       font-size: ${theme.fontSize.medium};
     `}
-
   }
 
   small {
     font-family: ${theme.fonts.graphik.regular};
     line-height: ${theme.lineHeight.extraSmall};
     font-size: ${theme.fontSize.small};
-    color: ${theme.colors.textSmall};
+    color: ${theme.colors.lightGrey};
   }
 
   a {
@@ -79,6 +78,7 @@ export default injectGlobal`
     font-size: ${theme.fontSize.bitlarger};
     line-height: ${theme.lineHeight.bitlarger};
     margin-bottom: 20px;
+    min-height: 90px;
     ${media.tablet`
       font-size: ${theme.fontSize.giant};
       line-height: ${theme.lineHeight.larger};

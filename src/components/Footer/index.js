@@ -2,32 +2,32 @@ import React from 'react';
 import { Row , Col } from 'react-flexbox-grid';
 import Link from '../Link';
 import Button from './../Button';
-import { Footer, Links } from './styled';
+import { Footer, Links, Column } from './styled';
 import { Container } from '../Main/styled';
 
 export default () => (
   <Footer>
     <Container>
-      <Col xs={12} sm={8} md={9}>
-        <Row>
-          <Col xs>
+      <Col xs={12} md={6} lg={8}>
+        <Row style={{marginBottom: '20px'}}>
+          <Column xs={12} sm={6} >
             <h3>Ответим на ваши вопросы</h3>
-          </Col>
-          <Col xs style={{textAlign: 'right', marginBottom: '50px'}}>
+          </Column>
+          <Column xs={12} sm={6}>
             <small>Или позвоните по бесплатному номеру</small>
             <br />
             <Link href='tel:88005000305'>8 800 500 03 05</Link>
-          </Col>
+          </Column>
           {/*<img src='images/chat.png' style={{width: '860px', height: '220px', marginBottom: '50px'}} />*/}
         </Row>
         <Links>
           <Row>
-            <Col xs={4}>
+            <Col xs={12} sm={4}>
               <Link href='#'>Смотреть тарифы</Link>
               <br />
               <Link href='#'>Отделения банка</Link>
             </Col>
-            <Col xs={4}>
+            <Col xs={12} sm={4}>
               <Link href='#'>Документы</Link>
               <br />
               <Link href='#'>Банковская лицензия</Link>
@@ -43,10 +43,10 @@ export default () => (
               <Col xs={0}>
                 <br />
               </Col>
-              <Col xs={3}>
+              <Col xs style={{flex: 0}}>
                 <img alt='' src='images/gplay.svg' />
               </Col>
-              <Col xs={9}>
+              <Col xs>
                 Скачайте в<br /> <b>Google play</b>
               </Col>
             </Row>
@@ -56,10 +56,10 @@ export default () => (
               <Col xs={0}>
                 <br />
               </Col>
-              <Col xs={3}>
+              <Col xs style={{flex: 0}}>
                 <img alt='' src='images/appstore.svg' />
               </Col>
-              <Col xs={9}>
+              <Col xs>
                 Скачайте в<br /> <b>App Store</b>
               </Col>
             </Row>
@@ -69,7 +69,7 @@ export default () => (
           Банковские услуги предоставляются Акционерным обществом «БКС — Инвестиционный Банк», Генеральная лицензия ЦБ РФ № 101 от 15.12.2014 г. Выдана без ограничения срока действия. Официальный сайт http://www.bcs-bank.com. Услуги по размещению денежных средств во вклады предоставляются Акционерным общество «БКС — Инвестиционный Банк», а также иными кредитными организациями - партнерами Акционерного общества «БКС — Инвестиционный Банк».
         </p>
       </Col>
-      <Col sm={4} md={3} />
+      <Col md={4} lg={3} />
     </Container>
   </Footer>
 );
