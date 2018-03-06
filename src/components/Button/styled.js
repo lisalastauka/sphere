@@ -75,6 +75,12 @@ export default styled.button`
     background: ${props.theme.colors.bigBtn};
   `}
 
+  ${props => props.submit && props.disabled &&`
+  	background-color: rgb(203, 203, 203);
+    box-shadow: none;
+    cursor: not-allowed;
+  `}
+
   ${props => props.small &&`
     width: auto;
     padding: 13px;

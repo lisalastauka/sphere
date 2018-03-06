@@ -22,7 +22,7 @@ export default () => (
       <Box>
         <Block>
           <small>Банк работает</small>
-          <h2>с 1989 <p style={{display: 'inline'}}>года</p></h2>
+          <h2>с 1989 <b>года</b></h2>
         </Block>
         <Block>
           <small>Эксперт <Link href='#'>РА</Link></small>

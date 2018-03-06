@@ -9,6 +9,9 @@ export default styled(Row)`
   }
   h2 {
     margin: 0;
+    b {
+      font-size: 18px;
+    }
   }
   p {
     white-space: nowrap;

@@ -36,6 +36,7 @@ export default {
     lightBlue: 'rgb(78,123,255)',
     btn: 'rgb(25, 108, 255)',
     bigBtn: 'rgb(63, 134, 249)',
+    checkbox: 'rgb(92, 151, 246)',
     link: '#0B51C4',
     footer: 'rgb(69,94,205)',
   },

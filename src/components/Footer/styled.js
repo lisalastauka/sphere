@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import media from './../../styled-components/media';
-import { Col } from 'react-flexbox-grid';
+import { Col, Row } from 'react-flexbox-grid';
 import Link from '../Link/styled';
 
 export const Footer = styled.div`
@@ -13,6 +13,14 @@ export const Footer = styled.div`
     color: white;
   }
 `;
+
+export const Header = styled(Row)`
+  margin-bottom: 20px;
+`;
+
+export const ButtonGroup = styled.div`
+  margin: 60px 0;
+`
 
 export const Links = styled.div`
   ${Link} {

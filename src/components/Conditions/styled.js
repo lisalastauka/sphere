@@ -12,14 +12,12 @@ export default styled.div`
   }
 
   li {
-    padding-left: 2.5em;
-    text-indent: -1.1em;
     line-height: 30px;
   }
 
   li::before {
-    font-size: 28px;
-    position: absolute;
+    font-size: 27px;
+    vertical-align: middle;
     content: "• ";
     color: ${props => props.theme.colors.lightBlue};
   }

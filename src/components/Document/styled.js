@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Row } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import media from './../../styled-components/media';
 import Carousel from './../Carousel';
 
@@ -8,6 +8,10 @@ export default styled.div`
   ${media.tablet`
     margin-bottom: 140px;
   `}
+`;
+
+export const Column = styled(Col)`
+  margin-bottom: -10%;
 `;
 
 export const CarouselBox = styled.div`
@@ -42,6 +46,10 @@ export const ShadowCarousel = styled(Carousel)`
       opacity: 1;
       transition: all 0.2s ease-out;
     }
+  }
+
+  img {
+    padding: 0 15px;
   }
 `;
 

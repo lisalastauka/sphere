@@ -8,6 +8,10 @@ export default styled.div`
     margin-bottom: 140px;
   `}
 
+  h2 > span {
+    ${props => props.theme.colored.gradient};
+  }
+
   p {
     margin-bottom: 20px;
     ${media.desktop`

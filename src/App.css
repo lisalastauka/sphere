@@ -157,28 +157,12 @@
   opacity: 1;
 }
 
-.card_3 li {
-  height: 0px;
-  visibility: hidden;
-  margin: 0;
-  opacity: 0;
-  transition: visibility 0s 2s, opacity 1s 2s linear, height 0.5s 2s linear;
-}
-
-.card_3--inViewport li {
-  height: 24px;
-  margin: 15px 0;
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
 .card_4 li {
   height: 0px;
   visibility: hidden;
   margin: 0;
   opacity: 0;
-  transition: visibility 0s 2.5s, opacity 1s 2.5s linear, height 0.5s 2.5s linear;
+  transition: visibility 0s 2s, opacity 1s 2s linear, height 0.5s 2s linear;
 }
 
 .card_4--inViewport li {

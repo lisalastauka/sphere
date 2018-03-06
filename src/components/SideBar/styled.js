@@ -16,4 +16,26 @@ export default styled.div`
   ${media.desktop`
     display: flex;
   `}
+
+  .rc-checkbox-checked .rc-checkbox-inner {
+    border-color: ${props => props.theme.colors.checkbox};
+    background-color: ${props => props.theme.colors.checkbox};
+  }
+
+  .rc-checkbox:hover .rc-checkbox-inner, .rc-checkbox-input:focus + .rc-checkbox-inner {
+    border-color: ${props => props.theme.colors.checkbox};
+  }
+
+  label {
+    display: inline;
+    font-size: 12px;
+  	line-height: 1.58;
+  	text-align: left;
+
+    a {
+      text-decoration: underline;
+      font-family: inherit;
+      color: inherit;
+    }
+  }
 `

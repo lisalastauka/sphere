@@ -1,12 +1,11 @@
 import React from 'react';
 import { Row , Col } from 'react-flexbox-grid';
-import Colored from './../Colored';
 import Container, { Slides, Slide, Inner } from './styled';
 import Button, { ButtonGroup } from './../Button';
 
 export default () => (
   <Container id="slides" >
-    <h2>Можно работать без <Colored>бухгалтера</Colored></h2>
+    <h2>Можно работать без <span>бухгалтера</span></h2>
     <p>
       Посчитаем налоги и отправим отчетность. Напомним когда <br/> нужно заплатить налоги и взносы, чтобы сэкономить.
     </p>

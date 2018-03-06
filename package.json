@@ -6,6 +6,7 @@
   "dependencies": {
     "ajv": "^6.2.0",
     "in-viewport": "^3.6.0",
+    "rc-checkbox": "^2.1.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-input-mask": "^1.2.2",
