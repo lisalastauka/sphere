@@ -16,8 +16,8 @@ export const Column = styled(Col)`
 
 export const CarouselBox = styled.div`
   width: 100vw;
-  background: url(images/document.png) 91% top / 27% no-repeat;
-  padding-top: 8%;
+  background: url(images/document.png) 93% top / 30% no-repeat;
+  padding-top: 10%;
   margin: 0;
   position: relative;
   overflow: overlay;
@@ -49,7 +49,7 @@ export const ShadowCarousel = styled(Carousel)`
   }
 
   img {
-    padding: 0 15px;
+    padding: 0 30px;
   }
 `;
 

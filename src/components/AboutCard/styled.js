@@ -12,7 +12,7 @@ export const AboutCard = styled(Row)`
     width: calc(100% + 40px);
     margin: -10px -20px;
     ${media.tablet`
-      margin: -14px -20px 0 0;
+      margin: 0 0 -45px -30px;
       width: 400px;
     `}
   }

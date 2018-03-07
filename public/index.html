@@ -36,5 +36,53 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      var __threadsDev = false
+      var __threadsPrompt = false
+      var __threadsVersion = false
+    </script>
+<script type="text/javascript">
+!function() {
+       function e() {
+         s("GET", r + "?rnd=" + Math.random(), function(e) {
+           console.log(e)
+           var r = JSON.parse(e);
+           if (t.__threadsVersion && (t.__threadsWidgetVersion = prompt("Version", t.__threadsWidgetVersion || "")), t.__threadsPrompt) {
+             var s = r && r.webchat && r.webchat.clientId;
+             t[s] = prompt("Client ID", t[s])
+           }
+           if (t.__threadsPromptData) {
+             var i = r && r.webchat && r.webchat.clientData;
+             t[i] = prompt("Client data", t[i])
+           }
+           r.webchat && (r.webchat.filename = r.filename), sessionStorage.setItem("__threadsWidget", JSON.stringify(r.webchat));
+           var o = a.createElement("script");
+           o.type = "text/javascript", o.async = !0, o.src = n ? "/app.js" : r.filename;
+           var d = a.getElementsByTagName("script")[0];
+           d ? d.parentNode.insertBefore(o, d) : a.body.appendChild(o)
+         })
+       }
+       var t = window,
+         a = document,
+         n = !!t.__threadsDev,
+         r = n ? "/settings.json" : "/settings.json",
+         s = function() {
+           var e = new XMLHttpRequest;
+           return function(t, a, n, r) {
+             e.onreadystatechange = function() {
+               if (4 === e.readyState)
+                 if (200 === this.status) n(e.response);
+                 else {
+                   if ("function" != typeof r) throw new Error(e.response);
+                   r(e)
+                 }
+             }, e.open(t, a), e.send()
+           }
+         }();
+       "complete" === a.readyState ? e() : t.attachEvent ? t.attachEvent("onload", e) : t.addEventListener("load", e, !1)
+     }();
+</script>
+
+
   </body>
 </html>

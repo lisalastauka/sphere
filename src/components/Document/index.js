@@ -22,11 +22,10 @@ export default () => (
             autoplaySpeed: 2500
           }}
         >
-          <img alt='' src={'images/contract.png'}/>
-          <img alt='' src={'images/contract.png'}/>
-          <img alt='' src={'images/contract.png'}/>
-          <img alt='' src={'images/contract.png'}/>
-          <img alt='' src={'images/contract.png'}/>
+          <img alt='' src={'images/documents/1.png'}/>
+          <img alt='' src={'images/documents/2.png'}/>
+          <img alt='' src={'images/documents/3.png'}/>
+          <img alt='' src={'images/documents/4.png'}/>
         </ShadowCarousel>
       </CarouselBox>
   </Inner>
