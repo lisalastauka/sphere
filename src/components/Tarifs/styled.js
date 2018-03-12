@@ -11,6 +11,7 @@ export const Size = styled.div`
   border-radius: 5px;
   height: 100%;
   min-height: 400px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -22,7 +23,7 @@ export const Size = styled.div`
   }
 
   img {
-    width: fit-content;
+    margin-left: 0;
     margin-bottom: 25px;
   }
 

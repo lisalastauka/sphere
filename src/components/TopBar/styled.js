@@ -15,7 +15,7 @@ export default styled.div`
     background: transparent;
     padding: 0;
     width: auto;
-    position: unset;
+    position: static;
     display: block;
   `}
 `;

@@ -59,7 +59,7 @@
 
 .card img {
   margin-left: 800px;
-  transition: all 1s ease-out;
+  transition: all 1s 1s ease-out;
 }
 
 .card--inViewport img {

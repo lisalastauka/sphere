@@ -18,7 +18,7 @@ export default injectGlobal`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${theme.fonts.graphik.medium};
+    font-family: ${theme.fonts.graphik.medium}, Tahoma, sans-serif;
     font-weight: 500;
   }
 
@@ -48,7 +48,7 @@ export default injectGlobal`
   }
 
   small {
-    font-family: ${theme.fonts.graphik.regular};
+    font-family: ${theme.fonts.graphik.regular}, sans-serif;
     line-height: ${theme.lineHeight.extraSmall};
     font-size: ${theme.fontSize.small};
     color: ${theme.colors.lightGrey};
@@ -57,7 +57,7 @@ export default injectGlobal`
   a {
     color: ${theme.colors.link};
     text-decoration: none;
-    font-family: ${theme.fonts.graphik.medium};
+    font-family: ${theme.fonts.graphik.medium}, sans-serif;
     transition: ${theme.transition};
 
     &:focus,
@@ -71,7 +71,7 @@ export default injectGlobal`
   }
 
   b {
-    font-family: ${theme.fonts.graphik.medium};
+    font-family: ${theme.fonts.graphik.medium}, sans-serif;
   }
 
   h1 {
@@ -133,22 +133,22 @@ export default injectGlobal`
 
   ::-webkit-input-placeholder {
     font-weight: normal;
-    font-family: ${theme.fonts.graphik.regular};
+    font-family: ${theme.fonts.graphik.regular}, sans-serif;
   }
 
   ::-moz-placeholder {
     font-weight: normal;
-    font-family: ${theme.fonts.graphik.regular};
+    font-family: ${theme.fonts.graphik.regular}, sans-serif;
   }
 
   :-ms-input-placeholder {
     font-weight: normal;
-    font-family: ${theme.fonts.graphik.regular};
+    font-family: ${theme.fonts.graphik.regular}, sans-serif;
   }
 
   :-moz-placeholder {
     font-weight: normal;
-    font-family: ${theme.fonts.graphik.regular};
+    font-family: ${theme.fonts.graphik.regular}, sans-serif;
   }
 
     /* stylelint-disable */

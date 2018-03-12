@@ -47,7 +47,7 @@ export default () => (
               <Col xs={0}>
                 <br />
               </Col>
-              <Col xs style={{flex: 0}}>
+              <Col xs={3} style={{flex: 0}}>
                 <img alt='' src='images/gplay.svg' />
               </Col>
               <Col xs>
