@@ -2,7 +2,7 @@ import React from 'react';
 import Conditions from './styled';
 
 export default () => (
-  <Conditions>
+  <Conditions id="conditions">
     <h2>Выгодные условия обслуживания</h2>
     <h3>Бесплатно для всех клиентов:</h3>
     <ul>

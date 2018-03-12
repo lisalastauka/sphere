@@ -65,6 +65,7 @@ export default styled.button`
 
   ${props => props.submit &&`
     width: 100%;
+    border: none;
     margin-bottom: 10px;
     font-size: ${props.theme.fontSize.medium};
     font-family: ${props.theme.fonts.graphik.medium};

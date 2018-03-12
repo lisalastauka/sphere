@@ -35,33 +35,33 @@ export default class List extends React.Component {
           <small style={{ fontSize: '16px',  textAlign: 'left'}}>
             Вы получаете:
           </small>
+          <ul style={{ textAlign: 'left'}}>
+            <Appear trigger='bank_2' className='bank_2'>
+              <li>Надежный банк</li>
+            </Appear>
+            <Appear trigger='card_1' className='card_1'>
+              <li>Реквизиты сразу</li>
+            </Appear>
+            <Appear trigger='card_2' className='card_2'>
+              <li>Карта для бизнеса</li>
+            </Appear>
+            <Appear trigger='card_4' className='card_4'>
+              <li>Большие лимиты на вывод</li>
+            </Appear>
+            <Appear trigger='slides' className='bank'>
+              <li>Посчитаем налоги</li>
+            </Appear>
+            <Appear trigger='account' className='bank'>
+              <li>Объединение счетов</li>
+            </Appear>
+            <Appear trigger='document' className='bank'>
+              <li>Создание документов</li>
+            </Appear>
+            <Appear trigger='tarifs' className='bank'>
+              <li>Выгодные тарифы</li>
+            </Appear>
+          </ul>
         </Appear>
-        <ul style={{ textAlign: 'left'}}>
-          <Appear trigger='bank_2' className='bank_2'>
-            <li>Надежный банк</li>
-          </Appear>
-          <Appear trigger='card_1' className='card_1'>
-            <li>Реквизиты сразу</li>
-          </Appear>
-          <Appear trigger='card_2' className='card_2'>
-            <li>Карта для бизнеса</li>
-          </Appear>
-          <Appear trigger='card_4' className='card_4'>
-            <li>Большие лимиты на вывод</li>
-          </Appear>
-          <Appear trigger='slides' className='bank'>
-            <li>Посчитаем налоги</li>
-          </Appear>
-          <Appear trigger='account' className='bank'>
-            <li>Объединение счетов</li>
-          </Appear>
-          <Appear trigger='document' className='bank'>
-            <li>Создание документов</li>
-          </Appear>
-          <Appear trigger='tarifs' className='bank'>
-            <li>Выгодные тарифы</li>
-          </Appear>
-        </ul>
       </Container>
 
     );

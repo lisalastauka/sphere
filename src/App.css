@@ -93,7 +93,7 @@
   opacity: 1;
 }
 
-.bank_1>small {
+.bank_1 {
   height: 0px;
   visibility: hidden;
   margin: 0;
@@ -101,8 +101,8 @@
   transition: visibility 0s, opacity 1s linear, height 0.5s linear;
 }
 
-.bank_1--inViewport >small {
-  height: 24px;
+.bank_1--inViewport {
+  height: 100%;
   margin: 15px 0;
   display: block;
   visibility: visible;
@@ -114,7 +114,7 @@
   visibility: hidden;
   margin: 0;
   opacity: 0;
-  transition: visibility 0s 0.5s, opacity 1s 0.5s linear, height 0.5s 0.5s linear;
+  transition: visibility 0s 0.1s, opacity 1s 0.1s linear, height 0.5s 0.1s linear;
 }
 
 .bank_2--inViewport li {
@@ -130,7 +130,7 @@
   visibility: hidden;
   margin: 0;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s 1s linear, height 0.5s 1s linear;
+  transition: visibility 0s 0.2s, opacity 1s 0.2s linear, height 0.5s 0.2s linear;
 }
 
 .card_1--inViewport li {
@@ -146,7 +146,7 @@
   visibility: hidden;
   margin: 0;
   opacity: 0;
-  transition: visibility 0s 1.5s, opacity 1s 1.5s linear, height 0.5s 1.5s linear;
+  transition: visibility 0s 0.3s, opacity 1s 0.3s linear, height 0.5s 0.3s linear;
 }
 
 .card_2--inViewport li {
@@ -162,7 +162,7 @@
   visibility: hidden;
   margin: 0;
   opacity: 0;
-  transition: visibility 0s 2s, opacity 1s 2s linear, height 0.5s 2s linear;
+  transition: visibility 0s 0.4s, opacity 1s 0.4s linear, height 0.5s 0.4s linear;
 }
 
 .card_4--inViewport li {

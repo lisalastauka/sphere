@@ -4,7 +4,9 @@ import { Row } from 'react-flexbox-grid';
 
 export const Gradient = styled.div`
   height: 5px;
+  display: none;
   ${media.tablet`
+    display: block;
     margin-bottom: 30px;
   `}
   -webkit-background:
