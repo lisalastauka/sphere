@@ -35,7 +35,7 @@ export const Badge = styled.div`
   div {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    font-family: ${props => props.theme.fonts.graphik.medium};
+    font-family: ${props => props.theme.fonts.graphik.medium}, sans-serif;
     margin-top: 24px;
     font-size: 10px;
     font-weight: 500;
@@ -45,7 +45,10 @@ export const Badge = styled.div`
 
 export const ButtonGroup = styled.div`
   margin: 60px 0;
-`
+  button:firstElementChild {
+    float: left;
+  }
+`;
 
 export const Links = styled.div`
   ${Link} {

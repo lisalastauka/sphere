@@ -10,9 +10,11 @@ export const AboutCard = styled(Row)`
 
   img {
     width: calc(100% + 40px);
-    margin: -10px -20px;
+    margin-top: -10px;
+    margin-left: -20px;
     ${media.tablet`
-      margin: 0 0 -45px -30px;
+      margin-bottom: -45px;
+      margin-left: -30px;
       width: 400px;
     `}
   }

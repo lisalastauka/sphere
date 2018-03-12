@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import media from './../../styled-components/media';
 
 export default styled.button`
-  font-family: ${props => props.theme.fonts.graphik.regular};
+  font-family: ${props => props.theme.fonts.graphik.regular}, sans-serif;
   color: white;
   background: ${props => props.theme.colors.btn};
   cursor: pointer;
@@ -92,7 +92,7 @@ export default styled.button`
     border: none;
     margin-bottom: 10px;
     font-size: ${props.theme.fontSize.medium};
-    font-family: ${props.theme.fonts.graphik.medium};
+    font-family: ${props.theme.fonts.graphik.medium}, sans-serif;
     font-weight: 500;
     height: 60px;
     border-radius: 5px;

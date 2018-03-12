@@ -50,7 +50,7 @@ export const Slide = styled.div`
   z-index: 3;
   top: 30px;
   font-size: ${props => props.theme.fontSize.regular};
-  font-family: ${props => props.theme.fonts.graphik.medium};
+  font-family: ${props => props.theme.fonts.graphik.medium}, sans-serif;
   ${media.tablet`
     top: 105px;
     ${props => props.backward && `

@@ -30,7 +30,7 @@ export default styled.div`
 
   button {
     color: rgb(26, 56, 105);
-    font-family: ${props => props.theme.fonts.graphik.medium};
+    font-family: ${props => props.theme.fonts.graphik.medium}, sans-serif;
     font-weight: 500;
     width: 100%;
     margin-bottom: 10px;
@@ -42,7 +42,7 @@ export default styled.div`
 `;
 
 export const GoTo = styled.button`
-  font-family: ${props => props.theme.fonts.graphik.medium};
+  font-family: ${props => props.theme.fonts.graphik.medium}, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.44;
