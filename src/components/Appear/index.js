@@ -9,12 +9,15 @@ class Appear extends Component {
   }
 
   setVisible = () => {
-    setTimeout(
-      this.setState({
-        inViewport: true
-      }), 3000
-    )
-    ;
+    this.setState({
+      inViewport: true
+    })
+    // setTimeout(
+    //   this.setState({
+    //     inViewport: true
+    //   }), 3000
+    // )
+    // ;
   }
 
   componentDidMount() {
@@ -28,8 +31,13 @@ class Appear extends Component {
       return;
     }
     if (el) {
-      el.firstElementChild.onload =
+      if (el.firstElementChild) {
+        el.firstElementChild.onload = () => {
+          this.watcher = inViewport(el, this.setVisible);
+        }
+      } else {
         this.watcher = inViewport(el, this.setVisible);
+      }
     } else {
       // fallback to visible
       this.setVisible();

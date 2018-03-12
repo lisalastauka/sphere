@@ -34,7 +34,7 @@ export default () => (
           </Row>
         </Links>
         <ButtonGroup>
-          <Button opaque>
+          <Button opaque disabled>
             Доступно в<br /> <b> любом браузере</b>
           </Button>
           <Button badge opaque disabled>
