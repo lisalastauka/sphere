@@ -9,6 +9,7 @@ export default styled.button`
   border-radius: 4px;
   padding: 13px 38px;
   font-size: ${props => props.theme.fontSize.small};
+  position: relative;
 
   ${props => props.outline &&`
     background: transparent;
@@ -42,7 +43,9 @@ export default styled.button`
     margin-right: 20px;
     width: 100%;
     margin-bottom: 10px;
+  `}
 
+  ${props => props.opaque && !props.disabled && `
     :hover {
       background-color: rgba(234, 237, 242, 0.4);
     }
@@ -50,6 +53,27 @@ export default styled.button`
 
   ${props => props.opaque && media.tablet`
     max-width: 200px;
+  `}
+  ${props => props.badge && `
+    outline: none;
+    ::before {
+      z-index: 1;
+      top: -10px;
+      position: absolute;
+      content: '';
+      height: 10px;
+      width: 100%;
+      background-color: rgb(69,94,205);
+    }
+    ::after {
+      top: 0;
+      right: -10px;
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 10px;
+      background-color: rgb(69,94,205);
+    }
   `}
 
   img {
@@ -85,6 +109,10 @@ export default styled.button`
   ${props => props.small &&`
     width: auto;
     padding: 13px;
+  `}
+
+  ${props => props.disabled &&`
+    cursor: default;
   `}
 
   ${props => props.inactive &&`

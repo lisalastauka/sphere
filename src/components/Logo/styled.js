@@ -4,7 +4,7 @@ import media from './../../styled-components/media';
 export const LogoImg = styled.img`
   width: 72px;
   height: 34.8px;
-  ${media.tablet`
+  ${media.desktop`
     width: 120px;
     height: 58px;
   `}

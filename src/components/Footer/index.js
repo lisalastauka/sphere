@@ -2,7 +2,7 @@ import React from 'react';
 import { Row , Col } from 'react-flexbox-grid';
 import Link from '../Link';
 import Button from './../Button';
-import { Footer, Links, Column, ButtonGroup, Header } from './styled';
+import { Footer, Links, Column, ButtonGroup, Header, Badge } from './styled';
 import { Container } from '../Main/styled';
 
 export default () => (
@@ -37,7 +37,12 @@ export default () => (
           <Button opaque>
             Доступно в<br /> <b> любом браузере</b>
           </Button>
-          <Button opaque>
+          <Button badge opaque disabled>
+            <Badge>
+              <div>
+                Скоро
+              </div>
+            </Badge>
             <Row>
               <Col xs={0}>
                 <br />
@@ -50,8 +55,13 @@ export default () => (
               </Col>
             </Row>
           </Button>
-          <Button opaque>
+          <Button badge opaque disabled>
             <Row>
+              <Badge>
+                <div>
+                  Скоро
+                </div>
+              </Badge>
               <Col xs={0}>
                 <br />
               </Col>
