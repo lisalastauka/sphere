@@ -47,6 +47,10 @@ export default injectGlobal`
     `}
   }
 
+  button, a {
+    font-family: ${theme.fonts.graphik.regular}, sans-serif;
+  }
+
   small {
     font-family: ${theme.fonts.graphik.regular}, sans-serif;
     line-height: ${theme.lineHeight.extraSmall};

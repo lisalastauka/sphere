@@ -29,6 +29,7 @@ export const Size = styled.div`
 
   ul {
     list-style: none;
+    width: 100%;
     padding: 0;
     margin: 0;
     flex: 1 0 auto;
