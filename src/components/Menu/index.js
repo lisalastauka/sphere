@@ -7,7 +7,7 @@ import Container, { GoTo } from './styled';
 export default class Menu extends React.Component {
   scrollTo(selector) {
     const elem = document.querySelector(`#${selector}`);
-    window.scroll({ top: elem.offsetTop - 75 , left: window.scrollX, behavior: 'auto' });
+    window.scroll({ top: elem.offsetTop - 75 , left: window.scrollX, behavior: 'smooth' });
     return this.props.toggle();
   }
 

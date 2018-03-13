@@ -1,6 +1,6 @@
 import React from 'react';
 import Appear from '../Appear';
-import Container, { Account, Zoom } from './styled';
+import Container, { Account, Zoom, ZoomMobile } from './styled';
 
 export default () => (
   <Container id="account">
@@ -10,6 +10,9 @@ export default () => (
     </p>
     <Account>
       <img alt='' src='images/window.png' />
+      <ZoomMobile>
+        <img alt='' src='images/account.png'/>
+      </ZoomMobile>
       <Zoom>
         <Appear className='account'>
           <img alt='' src='images/account.png'/>

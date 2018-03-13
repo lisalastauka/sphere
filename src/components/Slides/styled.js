@@ -10,6 +10,7 @@ export default styled.div`
 
   h2 > span {
     ${props => props.theme.colored.gradient};
+    white-space: nowrap;
   }
 
   p {

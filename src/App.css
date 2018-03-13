@@ -25,11 +25,46 @@
 }
 .animate-flicker {
   -webkit-animation-name: flickerAnimation;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-timing-function: infinite;
-  -moz-animation: flickerAnimation 1s infinite;
-  -o-animation: flickerAnimation 1s infinite;
-  animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 3s infinite;
+  -o-animation: flickerAnimation 3s infinite;
+  animation: flickerAnimation 3s infinite;
+  animation-duration: 3s;
+}
+
+@keyframes slidesAnimation {
+  0%   { transform: scale(1) translate(0); }
+  20%  { transform: scale(1.2) translate(0, 30%); }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes slidesAnimation{
+  0%   { opacity:0; }
+  20%  { opacity:1; }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes slidesAnimation{
+  0%   { opacity:0; }
+  20%  { opacity:1; }
+  80%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes slidesAnimation{
+  0%   { opacity:0; }
+  20%  { opacity:0.99; }
+  50%  { opacity:1; }
+  80%  { opacity:0.99; }
+  100% { opacity:0; }
+}
+.animate-slides {
+  -webkit-animation-name: slidesAnimation;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: infinite;
+  -moz-animation: slidesAnimation 2s infinite;
+  -o-animation: slidesAnimation 2s infinite;
+  animation: slidesAnimation 1s infinite;
   animation-duration: 3s;
 }
 
@@ -74,15 +109,16 @@
 }
 
 .account img {
-  margin: -14px -20px -10px 35px;
-  width: 100px;
+  margin-right: 800px;
+  margin-left: -800px;
+  margin-top: -30px;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
 
 .account--inViewport img {
-  width: 360px;
-  margin-left: -35px;
+  margin-right: -35px;
+  margin-left: -10%;
 }
 
 .bank li {

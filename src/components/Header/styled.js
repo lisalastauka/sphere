@@ -15,7 +15,7 @@ export default styled.div`
     `}
   }
 
-  h1 > b {
+  h1 > span {
     white-space: nowrap;
     ${props => props.theme.colored.gradient};
   }

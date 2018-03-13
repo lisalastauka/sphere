@@ -22,9 +22,9 @@ export const Account = styled.div`
     width: 400px;
     margin: 20px 0 0 -100px;
 
-    ${media.tablet`
+    ${media.desktop`
       width: 800px;
-      margin: 30px 0 -90px -35px;
+      margin: 30px auto -90px;
     `}
   }
 `;
@@ -32,9 +32,27 @@ export const Account = styled.div`
 export const Zoom = styled.div`
   position: absolute;
   top: 0;
+  display: none;
+
+  ${media.desktop`
+    display: block;
+  `}
 
   img {
-    margin: -32px 0 0 -44px;
     width: 470px;
   }
+`;
+
+export const ZoomMobile = styled.div`
+  position: absolute;
+  top: 0;
+
+  img {
+    margin: 32px 0 0 44px;
+    width: 470px;
+  }
+
+  ${media.desktop`
+    display: none;
+  `}
 `;

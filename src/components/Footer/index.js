@@ -13,12 +13,15 @@ export default () => (
           <Column xs={12} md={6} >
             <h3>Ответим на ваши вопросы</h3>
           </Column>
-          <Column right xs={12} md={6}>
+          <Column right="true" xs={12} md={6}>
             <small>Позвоните по бесплатному номеру</small>
             <br />
             <Link href='tel:88005000305'>8 800 500 03 05</Link>
           </Column>
         </Header>
+        <Button style={{ maxWidth: '640px', boxShadow: '0 10px 15px 0 rgba(0,0,0,0.1)'}} onClick={() => window.ThreadsWidget.showChat()} opaque>
+          Задать вопрос
+        </Button>
         {/*
           <Links>
             <Row>

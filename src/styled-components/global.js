@@ -104,6 +104,7 @@ export default injectGlobal`
     font-size: ${theme.fontSize.default};
     line-height: ${theme.lineHeight.regular};
     margin: 5px 0;
+    max-width: 690px;
     ${media.tablet`
       margin: 10px 0;
       font-size: ${theme.fontSize.large};
