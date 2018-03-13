@@ -34,7 +34,7 @@ export const Zoom = styled.div`
   top: 0;
 
   img {
-    margin: 32px 0 0 44px;
+    margin: -32px 0 0 -44px;
     width: 470px;
   }
 `;

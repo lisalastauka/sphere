@@ -14,25 +14,27 @@ export default () => (
             <h3>Ответим на ваши вопросы</h3>
           </Column>
           <Column right xs={12} md={6}>
-            <small>Или позвоните по бесплатному номеру</small>
+            <small>Позвоните по бесплатному номеру</small>
             <br />
             <Link href='tel:88005000305'>8 800 500 03 05</Link>
           </Column>
         </Header>
-        <Links>
-          <Row>
-            <Col xs={12} md={4}>
-              <Link href='#'>Смотреть тарифы</Link>
-              <br />
-              <Link href='#'>Отделения банка</Link>
-            </Col>
-            <Col xs={12} md={4}>
-              <Link href='#'>Документы</Link>
-              <br />
-              <Link href='#'>Банковская лицензия</Link>
-            </Col>
-          </Row>
-        </Links>
+        {/*
+          <Links>
+            <Row>
+              <Col xs={12} md={4}>
+                <Link href='#'>Смотреть тарифы</Link>
+                <br />
+                <Link href='#'>Отделения банка</Link>
+              </Col>
+              <Col xs={12} md={4}>
+                <Link href='#'>Документы</Link>
+                <br />
+                <Link href='#'>Банковская лицензия</Link>
+              </Col>
+            </Row>
+          </Links>
+        */}
         <ButtonGroup>
           <Button opaque disabled>
             Доступно в<br /> <b> любом браузере</b>

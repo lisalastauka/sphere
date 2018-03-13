@@ -3,7 +3,10 @@ import media from './../../styled-components/media';
 import { Row } from 'react-flexbox-grid';
 
 export default styled.div`
-  margin-bottom: 140px;
+  margin-bottom: 70px;
+  ${media.tablet`
+    margin-bottom: 140px;
+  `}
 `;
 
 export const Size = styled.div`
@@ -16,11 +19,20 @@ export const Size = styled.div`
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
+  background: white;
+  box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
 
-  :hover {
-    background: white;
-    box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
-  }
+  ${media.tablet`
+    background: transparent;
+    box-shadow: none;
+  `}
+
+  ${media.tablet`
+    :hover {
+      background: white;
+      box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
+    }
+  `}
 
   img {
     margin-left: 0;
@@ -33,6 +45,10 @@ export const Size = styled.div`
     padding: 0;
     margin: 0;
     flex: 1 0 auto;
+  }
+
+  a {
+    width: 100%;
   }
 
   li {
@@ -59,7 +75,7 @@ export const Size = styled.div`
 export const Modes = styled(Row)`
   display: none;
   margin-bottom: 20px;
-  ${media.desktop`
+  ${media.tablet`
     display: flex;
   `}
 `
@@ -69,9 +85,20 @@ export const CarouselBox = styled.div`
   margin: 0 -2rem 20px;
   overflow: hidden;
   display: block;
-  ${media.desktop`
+  ${media.tablet`
     display: none;
   `}
+
+  .slick {
+    &-active {
+      opacity: 0.7;
+      transition: all 0.2s ease-out;
+    }
+    &-current {
+      opacity: 1;
+      transition: all 0.2s ease-out;
+    }
+  }
 `;
 
 

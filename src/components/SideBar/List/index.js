@@ -28,6 +28,11 @@ export default class List extends React.Component {
     });
   }
 
+  scrollTo(selector) {
+    const elem = document.querySelector(`#${selector}`);
+    window.scroll({ top: elem.offsetTop - 75 , left: window.scrollX, behavior: 'auto' });
+  }
+
   render () {
     return (
       <Container>
@@ -37,28 +42,28 @@ export default class List extends React.Component {
           </small>
           <ul style={{ textAlign: 'left'}}>
             <Appear trigger='bank_2' className='bank_2'>
-              <li>Надежный банк</li>
+              <li onClick={() => this.scrollTo('bank_2')}>Надежный банк</li>
             </Appear>
             <Appear trigger='card_1' className='card_1'>
-              <li>Реквизиты сразу</li>
+              <li onClick={() => this.scrollTo('card_1')}>Реквизиты сразу</li>
             </Appear>
             <Appear trigger='card_2' className='card_2'>
-              <li>Карта для бизнеса</li>
+              <li onClick={() => this.scrollTo('card_2')}>Карта для бизнеса</li>
             </Appear>
             <Appear trigger='card_4' className='card_4'>
-              <li>Большие лимиты на вывод</li>
+              <li onClick={() => this.scrollTo('card_4')}>Большие лимиты на вывод</li>
             </Appear>
             <Appear trigger='slides' className='bank'>
-              <li>Посчитаем налоги</li>
+              <li onClick={() => this.scrollTo('slides')}>Посчитаем налоги</li>
             </Appear>
             <Appear trigger='account' className='bank'>
-              <li>Объединение счетов</li>
+              <li onClick={() => this.scrollTo('account')}>Объединение счетов</li>
             </Appear>
             <Appear trigger='document' className='bank'>
-              <li>Создание документов</li>
+              <li onClick={() => this.scrollTo('document')}>Создание документов</li>
             </Appear>
             <Appear trigger='tarifs' className='bank'>
-              <li>Выгодные тарифы</li>
+              <li onClick={() => this.scrollTo('tarifs')}>Выгодные тарифы</li>
             </Appear>
           </ul>
         </Appear>

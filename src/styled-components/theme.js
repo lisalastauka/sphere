@@ -54,7 +54,7 @@ export default {
     phone: 30,
   },
   colored: {
-    gradient: '-webkit-background:-webkit-gradient(linear, 272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background:-webkit-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-moz-background:-moz-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-o-background:-o-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background:linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background-clip: text;-webkit-text-fill-color: transparent;'
+    gradient: '@supports (top:0) {-webkit-background:-webkit-gradient(linear, 272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background:-webkit-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-moz-background:-moz-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-o-background:-o-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background:linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background-clip: text; text-fill-color: transparent;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}'
   },
   border: {
     radius: '5px',

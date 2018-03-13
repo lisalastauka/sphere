@@ -11,6 +11,7 @@ export default styled.div`
     position: relative;
     list-style-type: none;
     margin: 15px 0;
+    cursor: pointer;
   }
   li:before {
     content: "";

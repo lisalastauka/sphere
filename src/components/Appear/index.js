@@ -31,7 +31,7 @@ class Appear extends Component {
       return;
     }
     if (el) {
-      if (el.firstElementChild) {
+      if (el.firstElementChild && el.firstElementChild.tagName === 'img') {
         el.firstElementChild.onload = () => {
           this.watcher = inViewport(el, this.setVisible);
         }

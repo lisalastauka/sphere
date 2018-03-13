@@ -12,17 +12,23 @@ export default styled.div`
   }
 
   li {
-    line-height: 30px;
+    line-height: 20px;
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 17px;
   }
 
   li::before {
     font-size: 27px;
     vertical-align: middle;
+    position: absolute;
+    left: 0;
     content: "• ";
     color: ${props => props.theme.colors.lightBlue};
   }
 
   h3 {
     color: ${props => props.theme.colors.lightBlue};
+    margin-bottom: 15px;
   }
 `;

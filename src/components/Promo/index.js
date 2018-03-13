@@ -25,7 +25,7 @@ export default () => (
           <h2>с 1989 <b>года</b></h2>
         </Block>
         <Block>
-          <small>Эксперт <Link href='#'>РА</Link></small>
+          <small>Эксперт РА</small>
           <h2>ruBBB+</h2>
         </Block>
       </Box>
