@@ -9,7 +9,8 @@ class Appear extends Component {
   }
 
   setVisible = () => {
-    document.addEventListener('loadend',
+    document.addEventListener("DOMContentLoaded",
+    console.log()
       this.setState({
         inViewport: true
       })
