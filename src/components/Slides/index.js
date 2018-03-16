@@ -51,15 +51,15 @@ export default () => (
       Посчитаем налоги и отправим отчетность. Напомним когда <br/> нужно заплатить налоги и взносы, чтобы сэкономить.
     </p>
     <Slides>
-      <Slide className="back-slide" >
+      <Slide className="slide-sm" >
         {inner}
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>
-      <Slide className="center-slide" >
+      <Slide className="slide-md" >
         {inner}
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>
-      <Slide className="front-slide" >
+      <Slide className="slide-lg" >
         {inner}
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>

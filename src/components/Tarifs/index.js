@@ -86,6 +86,6 @@ export default () => (
         ))}
       </Carousel>
     </CarouselBox>
-    <Link href='https://bcs-bank.com/f/business/sme/tariffs.pdf?v5' target='_blank' ><img alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
+    <Link href='tarifs.pdf' target='_blank' ><img alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
   </Container>
 );
