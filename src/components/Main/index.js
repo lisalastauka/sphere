@@ -12,6 +12,7 @@ import Conditions from '../Conditions';
 import Tarifs from '../Tarifs';
 import Footer from '../Footer';
 import SideBar from '../SideBar';
+import Loader from '../Loader';
 import BottomBar from '../BottomBar';
 import Menu from '../Menu';
 import { toggleBodyOverflow } from '../../utils/helpers';

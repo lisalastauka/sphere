@@ -8,12 +8,6 @@ export default styled.div`
   ${media.desktop`
     margin-top: 0;
   `}
-  h1 {
-    min-height: 90px;
-    ${media.tablet`
-      min-height: 162px;
-    `}
-  }
 
   h1 > span {
     white-space: nowrap;

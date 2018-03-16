@@ -43,7 +43,7 @@ export const OpenClose = styled.div`
 
 export const Call = styled.div`
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 480px;
   padding: 20px 0;
   min-height: 85px;

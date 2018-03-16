@@ -20,17 +20,18 @@ export const Size = styled.div`
   max-width: 400px;
   margin: 0 auto;
   background: white;
-  box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
 
   ${media.tablet`
-    background: transparent;
-    box-shadow: none;
+    box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
+  	background-color: rgba(255, 255, 255);
+    opacity: 0.8;
   `}
 
   ${media.tablet`
     :hover {
       background: white;
       box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
+      opacity: 1;
     }
   `}
 

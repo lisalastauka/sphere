@@ -44,12 +44,13 @@ export const ShadowCarousel = styled(Carousel)`
     }
     &-center + img {
       opacity: 1;
+      border-radius: 0;
       transition: all 0.2s ease-out;
     }
   }
 
   img {
-    padding: 0 30px;
+    padding: 0 40px;
   }
 `;
 

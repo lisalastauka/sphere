@@ -37,6 +37,7 @@ export default injectGlobal`
 
   p {
     margin: 0;
+    max-width: 630px;
     color: ${theme.colors.textOpaque};
     line-height: ${theme.lineHeight.extraSmall};
     font-size: ${theme.fontSize.small};

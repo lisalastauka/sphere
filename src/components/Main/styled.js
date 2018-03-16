@@ -39,6 +39,7 @@ export const FullScreen = styled.div`
   flex-direction: column;
   ${media.tablet`
     height: 100vh;
+    min-height: fit-content;
   `}
 `;
 

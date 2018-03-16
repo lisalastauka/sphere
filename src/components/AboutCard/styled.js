@@ -9,23 +9,18 @@ export default styled(Row)`
   `}
 
   h3 {
-    background: linear-gradient(274deg, #618ef1 0%, #e6664a 100%, #fbb933 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    ${props => props.theme.colored.gradient};
   }
 `;
 
 export const P = styled.div`
   margin: 0 0 30px;
-  ${media.tablet `
-    margin: 60px 0 0;
-  `}
 `;
 
 export const Column = styled(Col)`
   padding-left: 20px;
   padding-right: 20px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   display: flex;
 `;

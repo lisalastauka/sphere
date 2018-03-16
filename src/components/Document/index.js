@@ -7,7 +7,7 @@ export default () => (
     <Inner>
       <Column xs={12} md={7}>
         <p>
-          Все договоры, акты, счета и&nbsp;остальные документы создаются автоматически, подписываются электронной подписью и&nbsp;привязываются к&nbsp;платежам, чтобы контролировать сроки оплаты и&nbsp;оформлять сделки быстро и&nbsp;правильно.
+          Конструктор договоров, быстро соединит платеж  с&nbsp;документом, а&nbsp;также вы&nbsp;сможете подписать его  и&nbsp;проконтролировать сроки платежа.
         </p>
       </Column>
       <CarouselBox>
@@ -22,10 +22,11 @@ export default () => (
             autoplaySpeed: 2500
           }}
         >
-          <img alt='' src={'images/documents/1.png'}/>
-          <img alt='' src={'images/documents/2.png'}/>
-          <img alt='' src={'images/documents/3.png'}/>
-          <img alt='' src={'images/documents/4.png'}/>
+          <img alt='' src={'images/documents/0.jpg'}/>
+          <img alt='' src={'images/documents/1.jpg'}/>
+          <img alt='' src={'images/documents/2.jpg'}/>
+          <img alt='' src={'images/documents/3.jpg'}/>
+          <img alt='' src={'images/documents/4.jpg'}/>
         </ShadowCarousel>
       </CarouselBox>
   </Inner>

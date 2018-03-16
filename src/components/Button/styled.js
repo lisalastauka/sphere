@@ -28,7 +28,7 @@ export default styled.button`
     border: none;
     width: 100%;
     border-radius: 0 0 4px 4px;
-    border-top: 1px solid rgba(25, 108, 255, 0.4);
+    border-top: 1px solid #A6C4F5;
     margin-bottom: 0;
   `}
 

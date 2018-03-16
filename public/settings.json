@@ -21,16 +21,7 @@
       "search": "Поиск оператора",
       "operatorSubTitle": "специалист поддержки"
     },
-    "welcome": {
-      "pre": {
-        "text": "Представьтесь, пожалуйста!",
-        "notice": ""
-      },
-      "post": {
-        "text": "Рады приветствовать Вас в чате",
-        "notice": "Какой у вас вопрос?"
-      }
-    },
+    "hideWelcome": true,
     "chatEndPoll": {
       "no": {
         "en": "No",

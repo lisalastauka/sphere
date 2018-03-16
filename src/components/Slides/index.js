@@ -18,6 +18,27 @@ const p = [
   'Рассчитываем зарплату и налоги, формируем платежные поручения, напоминаем об оплате зарплаты.',
 ];
 
+const inner = (
+  <Inner>
+    <h5>Рекомендуем заплатить страховые взносы за I квартал</h5>
+    <Row>
+      <Col xs={12} lg={7}>
+        <small>
+          Оплатите страховые взносы до 31 марта 2018 года на сумму 8 096,25₽, чтобы уменьшить сумму авансового платежа за I квартал.
+        </small>
+      </Col>
+      <Col xs={12} lg={5} style ={{ display: 'flex', justifyContent: 'flex-end'}} >
+        <ButtonGroup>
+          <Button style={{padding: '13px 38px'}} inactive disabled outline type="button">Оплатить</Button>
+          <Button inactive disabled outline small type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            &#8226; &#8226; &#8226;
+          </Button>
+        </ButtonGroup>
+      </Col>
+    </Row>
+  </Inner>
+);
+
 export default () => (
   <Container id="slides" >
     <h2>
@@ -30,31 +51,16 @@ export default () => (
       Посчитаем налоги и отправим отчетность. Напомним когда <br/> нужно заплатить налоги и взносы, чтобы сэкономить.
     </p>
     <Slides>
-      <Slide backward >
-        <h6>Пора готовить декларацию для налоговой</h6>
+      <Slide className="back-slide" >
+        {inner}
+        <Button disabled footer type="button">Оплатить</Button>
       </Slide>
-      <Slide center >
-        <h5>Пора готовить декларацию для налоговой</h5>
+      <Slide className="center-slide" >
+        {inner}
+        <Button disabled footer type="button">Оплатить</Button>
       </Slide>
-      <Slide >
-        <Inner>
-          <h5>Рекомендуем заплатить страховые взносы за I квартал</h5>
-          <Row>
-            <Col xs={12} lg={7}>
-              <small>
-                Оплатите страховые взносы до 31 марта 2018 года на сумму 8 096,25₽, чтобы уменьшить сумму авансового платежа за I квартал.
-              </small>
-            </Col>
-            <Col xs={12} lg={5} style ={{ display: 'flex', justifyContent: 'flex-end'}} >
-              <ButtonGroup>
-                <Button style={{padding: '13px 38px'}} inactive disabled outline type="button">Оплатить</Button>
-                <Button inactive disabled outline small type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  &#8226; &#8226; &#8226;
-                </Button>
-              </ButtonGroup>
-            </Col>
-          </Row>
-        </Inner>
+      <Slide className="front-slide" >
+        {inner}
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>
     </Slides>

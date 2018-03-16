@@ -84,7 +84,7 @@ export const Laptop = styled.div`
 `
 
 export const Box = styled.div`
-  margin-top: 20px;
+  margin-top: 10px;
   z-index: 1;
   width: fit-content;
   background: rgba(233, 237, 248, 0.9);
@@ -101,7 +101,4 @@ export const Block = styled.div`
   ${media.tablet`
     padding: 10px 20px 20px;
   `}
-  :nth-of-type(1) {
-    border-right: 1px solid rgba(26, 56, 105, 0.1);
-  }
 `;

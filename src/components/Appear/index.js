@@ -25,16 +25,15 @@ class Appear extends Component {
     const trigger = document.getElementById(this.props.trigger);
 
     const el = ReactDOM.findDOMNode(this);
-
     if (trigger) {
       this.watcher = inViewport(trigger, this.setVisible);
       return;
     }
     if (el) {
-      if (el.firstElementChild && el.firstElementChild.tagName === 'img') {
-        el.firstElementChild.onload = () => {
-          this.watcher = inViewport(el, this.setVisible);
-        }
+      if (el.children ) {
+        el.addEventListener('loadend',
+        this.watcher = inViewport(el, this.setVisible)
+      );
       } else {
         this.watcher = inViewport(el, this.setVisible);
       }

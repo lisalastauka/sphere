@@ -49,11 +49,11 @@ export const Slide = styled.div`
   border-radius: 5px;
   box-shadow: 0px 10px 30px rgba(21, 17, 97, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.1);
   z-index: 3;
-  top: 30px;
+  top: 200px;
   font-size: ${props => props.theme.fontSize.regular};
   font-family: ${props => props.theme.fonts.graphik.medium}, sans-serif;
   ${media.tablet`
-    top: 105px;
+    top: 150px;
     ${props => props.backward && `
       top: 0;
     `}
@@ -63,7 +63,7 @@ export const Slide = styled.div`
   `}
   ${props => props.center && `
     z-index: 2;
-    padding: 30px;
+
     width: 88%;
     max-width: 640px;
     margin: 0 6%;

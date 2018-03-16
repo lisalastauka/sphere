@@ -2,7 +2,7 @@ import React from 'react';
 import { Row , Col } from 'react-flexbox-grid';
 import Link from '../Link';
 import Button from './../Button';
-import { Footer, Links, Column, ButtonGroup, Header, Badge } from './styled';
+import { Footer, Column, ButtonGroup, Header, Badge } from './styled';
 import { Container } from '../Main/styled';
 
 export default () => (
@@ -19,9 +19,6 @@ export default () => (
             <Link href='tel:88005000305'>8 800 500 03 05</Link>
           </Column>
         </Header>
-        <Button style={{ maxWidth: '640px', boxShadow: '0 10px 15px 0 rgba(0,0,0,0.1)'}} onClick={() => window.ThreadsWidget.showChat()} opaque>
-          Задать вопрос
-        </Button>
         {/*
           <Links>
             <Row>
