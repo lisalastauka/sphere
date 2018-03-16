@@ -9,18 +9,13 @@ class Appear extends Component {
   }
 
   setVisible = () => {
-    document.addEventListener("load",
-      this.setState({
-        inViewport: true
-      })
+    setTimeout(
+      document.addEventListener("load",
+        this.setState({
+          inViewport: true
+        })
+      )
     );
-
-    // setTimeout(
-    //   this.setState({
-    //     inViewport: true
-    //   }), 3000
-    // )
-    // ;
   }
 
   componentDidMount() {
