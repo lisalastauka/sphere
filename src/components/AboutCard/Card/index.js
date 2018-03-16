@@ -8,10 +8,10 @@ export default class Card extends React.Component {
     return (
       <AtvImg
         layers={[
-          'images/card-sfera.png',
-          'images/card-sfera.png',
+          'images/card-sfera2x.png',
+          'images/card-sfera2x.png',
         ]}
-        staticFallback="images/card-sfera.png"
+        staticFallback="images/card-sfera2x.png"
         isStatic={false}
         className={'thisIsOptional'}
         style={{ width: 320, height: 190 }}

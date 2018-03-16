@@ -16,7 +16,8 @@ export const Column = styled(Col)`
 
 export const CarouselBox = styled.div`
   width: 100vw;
-  background: url(images/document.png) 93% top / 30% no-repeat;
+  background: url(images/document2x.png) 93% top / 30% no-repeat;
+  background-image: -webkit-image-set(url(images/document1x.png) 1x, url(images/document2x.png) 2x, url(images/document3x.png) 3x);
   padding-top: 10%;
   margin: 0;
   position: relative;

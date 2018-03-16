@@ -35,12 +35,12 @@ export default () => (
     <Col xs={6}>
       <Laptop>
         <Appear className='promo'>
-          <img alt='' src='images/laptop.png'/>
+          <img alt='' src='images/laptop2x.png' srcset='images/laptop1x.png 1x, images/laptop2x.png 2x, images/laptop3x.png 3x'/>
         </Appear>
       </Laptop>
       <Phone>
         <Appear className='phone'>
-          <img alt='' src='images/phone.png'/>
+          <img alt='' src='images/phone2x.png' srcset='images/phone1x.png 1x, images/phone2x.png 2x, images/phone3x.png 3x'/>
         </Appear>
       </Phone>
     </Col>
