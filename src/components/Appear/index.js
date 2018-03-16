@@ -9,9 +9,12 @@ class Appear extends Component {
   }
 
   setVisible = () => {
-    this.setState({
-      inViewport: true
-    })
+    document.addEventListener('loadend',
+      this.setState({
+        inViewport: true
+      })
+    );
+
     // setTimeout(
     //   this.setState({
     //     inViewport: true
@@ -32,8 +35,8 @@ class Appear extends Component {
     if (el) {
       if (el.children ) {
         el.addEventListener('loadend',
-        this.watcher = inViewport(el, this.setVisible)
-      );
+          this.watcher = inViewport(el, this.setVisible)
+        );
       } else {
         this.watcher = inViewport(el, this.setVisible);
       }
