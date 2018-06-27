@@ -57,6 +57,8 @@ class Appear extends Component {
         img.onload = () => {
           this.watcher = inViewport(el, this.setVisible);
         };
+        console.log(img);
+        console.log(img.complete);
           // NOTE: check on IE
         if(img.complete){
           console.log('complete');
