@@ -160,13 +160,18 @@ export default injectGlobal`
     @font-face {
       font-family: ${theme.fonts.graphik.regular};
       font-display: swap;
-      src: url('fonts/graphikLC/GraphikLC-Regular.otf');
+      src:
+        local('GraphikLC-Regular'),
+        url('fonts/graphikLC/GraphikLC-Regular.eot'),
+        url('fonts/graphikLC/GraphikLC-Regular.otf') format('truetype');
     }
 
     @font-face {
     font-family: ${theme.fonts.graphik.medium};
     font-display: swap;
-    src: url('fonts/graphikLC/GraphikLC-Medium.otf');
+    src:
+      local('GraphikLC-Medium'),
+      url('fonts/graphikLC/GraphikLC-Medium.eot'),
+      url('fonts/graphikLC/GraphikLC-Medium.otf') format('truetype');
     }
-
   `;
