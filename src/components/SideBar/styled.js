@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from './../../styled-components/media';
+import Button from '../Button/styled';
 
 export default styled.div`
   flex-direction: column;
@@ -38,4 +39,14 @@ export default styled.div`
       color: inherit;
     }
   }
+`
+
+export const ChatButton = styled(Button)`
+  width: 100%;
+  max-width: none;
+  background-color: rgb(250, 250, 250);
+  font-size: 16px;
+  font-family: ${props => props.theme.fonts.graphik.medium};
+  color: inherit;
+  text-align: center;
 `

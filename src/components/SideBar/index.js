@@ -5,7 +5,7 @@ import { Row , Col } from 'react-flexbox-grid';
 import Button from './../Button';
 /* import List from './List'; */
 
-import SideBar from './styled';
+import SideBar, { ChatButton } from './styled';
 
 import 'rc-checkbox/assets/index.css';
 
@@ -53,17 +53,10 @@ export default class Container extends React.Component {
                 </Button>
               </a>
             </div>
-            <Button style={{
-              width: '100%',
-              maxWidth: 'none',
-              backgroundColor: 'rgb(250, 250, 250)',
-              fontSize: '16px',
-              fontWeight: '500',
-              fontFamily: 'GraphikLC Medium',
-              color: 'inherit',
-              textAlign: 'center'
-            }}
-            onClick={() => window.ThreadsWidget.showChat()} opaque>
+            <ChatButton
+              onClick={() => window.ThreadsWidget.showChat()}
+              opaque
+            >
               <svg style={{verticalAlign: 'middle', marginRight: '10px'}} width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs></defs>
                 <g id="Landing" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -72,7 +65,7 @@ export default class Container extends React.Component {
                     </g>
                 </g>
               </svg> Задать вопрос
-            </Button>
+            </ChatButton>
           </div>
         </Row>
       </SideBar>
