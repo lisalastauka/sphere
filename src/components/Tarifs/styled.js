@@ -69,6 +69,7 @@ export const Size = styled.div`
   div {
     height: 70px;
     margin-bottom: 30px;
+    width: 100%;
 
     h3 {
       margin-bottom: 0;
