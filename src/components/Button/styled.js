@@ -113,6 +113,10 @@ export default styled.button`
 
   ${props => props.disabled &&`
     cursor: default;
+    :hover {
+      background: transparent;
+      color: ${props.theme.colors.textBtn};
+    }
   `}
 
   ${props => props.inactive &&`
