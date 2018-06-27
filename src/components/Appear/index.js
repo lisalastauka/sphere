@@ -40,9 +40,7 @@ class Appear extends Component {
             const img = el.querySelectorAll("img")[0];
 
             if(img){
-              console.log(img);
               img.onload = () => {
-                console.log("loaded");
                 this.watcher = inViewport(el, this.setVisible);
               };
             } else {
@@ -57,7 +55,9 @@ class Appear extends Component {
       // NOTE: check on IE
       const img = el.querySelectorAll("img")[0];
       if(img){
+        console.log(img);
         img.onload = () => {
+          console.log("loaded");
           this.watcher = inViewport(el, this.setVisible);
         };
       } else {
