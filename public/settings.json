@@ -10,7 +10,6 @@
     "disableGeoRequest": false,
     "disableWebNotification": false,
     "clientData": "clientData",
-    "style": "style.css",
     "isContainerHidden": true,
     "webNotification": {
       "title": "Threads Web Chat",

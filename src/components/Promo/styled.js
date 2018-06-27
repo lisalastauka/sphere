@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Row } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import media from './../../styled-components/media';
 
 export default styled(Row)`
@@ -23,7 +23,7 @@ export const Side = styled.div`
   display: inline-block;
   border-radius: 2px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   -webkit-background:
     -webkit-gradient(linear, to bottom, #7189de, #df6752);
@@ -62,8 +62,8 @@ export const Phone = styled.div`
   top: 0;
   display: none;
   img {
-    width: 279px;
-    margin-bottom: 20px;
+    width: 209px;
+    margin-top: 40px;
   }
   ${media.tablet`
     display: block;
@@ -102,3 +102,12 @@ export const Block = styled.div`
     padding: 10px 20px 20px;
   `}
 `;
+
+export const MediaBlock = styled(Col)`
+  max-width: 45%;
+  content: '';
+  height: 291px;
+  ${media.tablet`
+    height: 540px;
+  `}
+`

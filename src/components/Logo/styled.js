@@ -10,7 +10,7 @@ export const LogoImg = styled.img`
   `}
 `;
  export const BCSImg = styled.img`
-    width: 74px;
-    height: 30px;
+    height: 24px;
     vertical-align: middle;
+    margin-left: 5px;
  `;

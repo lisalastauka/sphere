@@ -16,43 +16,81 @@ export const Column = styled(Col)`
 
 export const CarouselBox = styled.div`
   width: 100vw;
-  background: url(images/document2x.png) 93% top / 30% no-repeat;
-  background-image: -webkit-image-set(url(images/document1x.png) 1x, url(images/document2x.png) 2x, url(images/document3x.png) 3x);
-  padding-top: 10%;
-  margin: 0;
+  background-size: 70%;
+  background-position: top;
+  background-image: url(images/document.png);
+  background-image: image-set(url(images/document.png) 1x, url(images/document.png) 2x, url(images/document.png) 3x);
+   /* background-origin: content-box; */
+  background-repeat: no-repeat;
   position: relative;
   overflow: overlay;
-  display: none;
+  margin-top: 70px;
+  /* display: none; */
+  padding: 22% 0 0 0;
+  background-size: 70%;
+  content: '';
+  max-height: 620px;
+  overflow: hidden;
+
+  ${media.bigPhone`
+    background-position-x: 93%;
+    background-size: 30%;
+    padding: 10% 0;
+    max-height: 366px;
+  `}
 
   ${media.tablet`
-    display: block;
+    margin: 0;
+    max-height: 347px;
+  `}
+
+  ${media.bigTablet`
+    background-position-x: 90%;
+    max-height: 480px;
+  `}
+
+  ${media.bigDesktop`
+    background-position-x: 93%;
   `}
 `;
 
 export const ShadowCarousel = styled(Carousel)`
   .slick {
     &-slide {
-      opacity: 0.1;
-      transition: all 0.2s ease-out;
+      opacity: 0.6;
+      transition: opacity 0.2s ease-out;
     }
     &-active {
-      opacity: 0.3;
-      transition: all 0.2s ease-out;
+      opacity: 0.6;
+      transition: opacity 0.2s ease-out;
     }
-    &-center {
-      opacity: 0.8;
-      transition: all 0.2s ease-out;
-    }
-    &-center + img {
+    &-center{
       opacity: 1;
       border-radius: 0;
-      transition: all 0.2s ease-out;
+      transition: opacity border-radius 0.2s ease-out;
     }
   }
-
-  img {
-    padding: 0 40px;
-  }
+  ${media.bigPhone`
+    .slick {
+      &-slide {
+        opacity: 0.1;
+        transition: opacity 0.2s ease-out;
+      }
+      &-active {
+        opacity: 0.3;
+        transition: opacity 0.2s ease-out;
+      }
+      &-center {
+        opacity: 0.8;
+        transition: opacity 0.2s ease-out;
+      }
+      &-center + img {
+        opacity: 1;
+        border-radius: 0;
+        transition: opacity border-radius 0.2s ease-out;
+      }
+    }
+  `}
 `;
 
 export const Inner = styled(Row)`

@@ -17,6 +17,12 @@ export default styled.div`
 
 export const Account = styled.div`
   position: relative;
+  content: '';
+  height: 265px;
+
+  ${media.desktop`
+    height: 423px;
+  `}
 
   >img {
     width: 400px;

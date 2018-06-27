@@ -1,37 +1,63 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import inViewport from 'in-viewport';
-import cx from 'classnames';
+import cn from 'classnames';
+
+
 
 class Appear extends Component {
+  constructor(){
+    super();
+    this.animate = this.animate.bind(this);
+  }
+
   state = {
-    inViewport: false
+    inViewport: false,
   }
 
   setVisible = () => {
-    setTimeout(
-      document.addEventListener("load",
-        this.setState({
-          inViewport: true
-        })
-      )
-    );
+    this.setState({
+      inViewport: true
+    })
   }
 
   componentDidMount() {
+    this.animate();
+  }
+
+  animate() {
     // watch for viewport entry
-    const trigger = document.getElementById(this.props.trigger);
 
     const el = ReactDOM.findDOMNode(this);
-    if (trigger) {
-      this.watcher = inViewport(trigger, this.setVisible);
-      return;
+    const options = {
+        rootMargin: '1000px',
+        threshold: 1.0
     }
-    if (el) {
-      if (el.children ) {
-        el.addEventListener('loadend',
-          this.watcher = inViewport(el, this.setVisible)
-        );
+    if ("IntersectionObserver" in window) {
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = el.querySelectorAll("img")[0];
+
+            if(img){
+              img.onload = () => {
+                this.watcher = inViewport(el, this.setVisible);
+              };
+            } else {
+              this.watcher = inViewport(el, this.setVisible);
+            }
+          }
+        })
+      }, options);
+        observer.observe(el);
+    } else if (el) {
+
+      // NOTE: check on IE
+      const img = el.querySelectorAll("img")[0];
+      if(img){
+        img.onload = () => {
+          this.watcher = inViewport(el, this.setVisible);
+        };
       } else {
         this.watcher = inViewport(el, this.setVisible);
       }
@@ -48,8 +74,9 @@ class Appear extends Component {
   }
 
   render() {
-    const className = cx(this.props.className, this.state.inViewport && `${this.props.className}--inViewport`);
-    const desktop =  document.body.getBoundingClientRect().width >= 1280;
+    const className = cn(this.props.className, this.state.inViewport && `${this.props.className}--inViewport`);
+    const desktop =  window.innerWidth >= 1280;
+    const tablet =  window.innerWidth >= 768;
     return <div className={desktop ? className : ''}>{ this.props.children }</div>;
   }
 }

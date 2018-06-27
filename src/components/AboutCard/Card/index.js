@@ -9,7 +9,6 @@ export default class Card extends React.Component {
       <AtvImg
         layers={[
           'images/card-sfera2x.png',
-          'images/card-sfera2x.png',
         ]}
         staticFallback="images/card-sfera2x.png"
         isStatic={false}

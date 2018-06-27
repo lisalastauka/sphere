@@ -154,8 +154,8 @@ var AtvImg = (function (_Component) {
           transform: 'perspective(' + this.state.rootElemWidth * 3 + 'px)'
         }, this.props.style ? this.props.style : {}),
         onMouseMove: this.handleMove,
-        /*onMouseEnter: this.handleEnter,
-        onMouseLeave: this.handleLeave, */
+        onMouseEnter: this.handleEnter,
+        onMouseLeave: this.handleLeave,
         onTouchMove: this.handleTouchMove,
         onTouchStart: this.handleEnter,
         onTouchEnd: this.handleLeave,
@@ -172,9 +172,7 @@ var AtvImg = (function (_Component) {
     );
   };
 
-  _createClass(AtvImg, null, [{
-    enumerable: true
-  }]);
+  _createClass(AtvImg, null);
 
   return AtvImg;
 })(_react.Component);

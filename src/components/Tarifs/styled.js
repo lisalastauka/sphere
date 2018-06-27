@@ -23,15 +23,13 @@ export const Size = styled.div`
 
   ${media.tablet`
     box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
-  	background-color: rgba(255, 255, 255);
-    opacity: 0.8;
+  	background-color: rgba(255, 255, 255, 0.5);
   `}
 
   ${media.tablet`
     :hover {
-      background: white;
+      background-color: rgba(255, 255, 255, 1);
       box-shadow: 0px 10px 30px rgba(51, 45, 179, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.06);
-      opacity: 1;
     }
   `}
 
@@ -55,6 +53,7 @@ export const Size = styled.div`
   li {
     line-height: ${props => props.theme.lineHeight.small};
     margin-bottom: 10px;
+    min-height: 44px;
   }
 
   small {
@@ -68,8 +67,12 @@ export const Size = styled.div`
   }
 
   div {
-    height: 55px;
+    height: 70px;
     margin-bottom: 30px;
+
+    h3 {
+      margin-bottom: 0;
+    }
   }
 `
 
@@ -77,6 +80,13 @@ export const Modes = styled(Row)`
   display: none;
   margin-bottom: 20px;
   ${media.tablet`
+    display: flex;
+    margin-bottom: 40px;
+  `}
+  ${media.desktop`
+    display: none;
+  `}
+  ${media.bigDesktop`
     display: flex;
   `}
 `
@@ -86,18 +96,33 @@ export const CarouselBox = styled.div`
   margin: 0 -2rem 20px;
   overflow: hidden;
   display: block;
+
   ${media.tablet`
+    display: none;
+  `}
+
+  ${media.bigTablet`
+    .slick-track {
+      height: 468px;
+    }
+  `}
+
+  ${media.desktop`
+    display: flex;
+  `}
+
+  ${media.bigDesktop`
     display: none;
   `}
 
   .slick {
     &-active {
       opacity: 0.7;
-      transition: all 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
     }
     &-current {
       opacity: 1;
-      transition: all 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
     }
   }
 `;

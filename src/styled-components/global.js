@@ -83,7 +83,6 @@ export default injectGlobal`
     font-size: ${theme.fontSize.bitlarger};
     line-height: ${theme.lineHeight.bitlarger};
     margin-bottom: 20px;
-    min-height: 90px;
     ${media.tablet`
       font-size: ${theme.fontSize.giant};
       line-height: ${theme.lineHeight.larger};
@@ -160,12 +159,14 @@ export default injectGlobal`
     /* stylelint-disable */
     @font-face {
       font-family: ${theme.fonts.graphik.regular};
+      font-display: swap;
       src: url('fonts/graphikLC/GraphikLC-Regular.otf');
     }
 
     @font-face {
     font-family: ${theme.fonts.graphik.medium};
-      src: url('fonts/graphikLC/GraphikLC-Medium.otf');
+    font-display: swap;
+    src: url('fonts/graphikLC/GraphikLC-Medium.otf');
     }
 
   `;

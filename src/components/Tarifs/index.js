@@ -7,53 +7,55 @@ import Button from './../Button';
 import Container, { Size, CarouselBox, CarouselItem, Modes } from './styled';
 
 const tarifs = [
-  <Size>
+  <Size id="tariff_s">
     <img alt='' src={'images/S.svg'}/>
     <ul>
-      <li> <b>90₽ за перевод</b> только внешним юр. лицам</li>
-      <li> <b>150 тыс. ₽ перевод</b> на личную карту БКС </li>
+      <li> <b>90₽</b> за внешний перевод</li>
+      <li> <b>Бесплатные</b> переводы для&nbsp;ИП на&nbsp;личную карту БКС&nbsp;Банка <b>до&nbsp;150&nbsp;тыс.&nbsp;₽ </b></li>
     </ul>
     <div>
       <h3>
         Бесплатно
       </h3>
     </div>
-    <a href="https://sme.bcs-bank.com/registration?tariff=S" target="_self">
-      <Button outline wide>
+    <a href="https://sfera.ru/registration?tariff=S" target="_self">
+      <Button className="choose tariff" outline wide>
         Выбрать тариф
       </Button>
     </a>
   </Size>,
-  <Size>
+  <Size id="tariff_m">
     <img alt='' src={'images/M.svg'}/>
     <ul>
-      <li> <b>5 платежей бесплатно,</b> остальные 40₽ за внешний перевод юр. лицам</li>
-      <li> <b>300 тыс. ₽ перевод</b> на личную карту БКС</li>
+      <li> <b>Бесплатно 5</b> внешних переводов, остальные − 40₽</li>
+      <li> <b>Бесплатные</b> переводы для&nbsp;ИП на&nbsp;личную карту БКС&nbsp;Банка <b>до&nbsp;300&nbsp;тыс.&nbsp;₽ </b></li>
     </ul>
     <div>
       <h3>
-        599₽ / месяц
+        3 месяца бесплатно
       </h3>
+      <small>после 599₽&nbsp;в&nbsp;месяц</small>
     </div>
-    <a href="https://sme.bcs-bank.com/registration?tariff=M" target="_self">
-      <Button outline wide>
+    <a href="https://sfera.ru/registration?tariff=M" target="_self">
+      <Button className="choose tariff" outline wide>
         Выбрать тариф
       </Button>
     </a>
   </Size>,
-  <Size>
+  <Size id="tariff_l">
     <img alt='' src={'images/L.svg'}/>
     <ul>
-      <li> <b>15 платежей бесплатно,</b> остальные 30₽ за внешний перевод юр. лицам</li>
-      <li> <b> 500 тыс. ₽ перевод </b> на личную карту БКС</li>
+      <li> <b>Бесплатно 15</b> внешних переводов, остальные − 30₽</li>
+      <li> <b>Бесплатные</b> переводы для&nbsp;ИП на&nbsp;личную карту БКС&nbsp;Банка <b>до&nbsp;500&nbsp;тыс.&nbsp;₽ </b></li>
     </ul>
     <div>
       <h3>
-        899₽ / месяц
+        3 месяца бесплатно
       </h3>
+      <small>после 899₽&nbsp;в&nbsp;месяц</small>
     </div>
-    <a href="https://sme.bcs-bank.com/registration?tariff=L" target="_self">
-      <Button outline wide>
+    <a href="https://sfera.ru/registration?tariff=L" target="_self">
+      <Button className="choose tariff" outline wide>
         Выбрать тариф
       </Button>
     </a>
@@ -86,6 +88,6 @@ export default () => (
         ))}
       </Carousel>
     </CarouselBox>
-    <Link href='tarifs.pdf' target='_blank' ><img alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
+    <Link href='https://bcs-bank.com/f/business/sme/tariffs.pdf?v7' target='_blank' ><img alt='' style={{margin: '5px', verticalAlign: 'middle'}} src='images/pdf.png'/>Подробное описание тарифов</Link>
   </Container>
 );

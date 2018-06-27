@@ -38,6 +38,7 @@ export default class Main extends React.Component {
   render () {
     return (
       <div style={{overflow: 'hidden'}}>
+        {/* <Loader /> */}
         <SideBar />
         <Menu open={this.state.open} toggle={this.toggle} />
         <Appear className='progress'>

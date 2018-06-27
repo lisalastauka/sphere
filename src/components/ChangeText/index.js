@@ -1,4 +1,6 @@
 import React from 'react';
+import cx from 'classnames';
+import Container from './styled';
 
 export default class ChangeText extends React.Component {
   state = {
@@ -22,7 +24,24 @@ export default class ChangeText extends React.Component {
   }
 
   render() {
-    const text = this.props.texts[this.state.count];
-    return text;
+    const { texts, inline, animation } = this.props;
+    return (
+      <Container
+        inline={inline}
+        className={
+          cx({
+            [`${animation}`]: animation
+          })
+        }
+      >
+        <ul className='changeText'>
+          {texts.map((text, i) => (
+            <li key={i}>
+              {inline ? <h2>{text}</h2> : text}
+            </li>
+          ))}
+        </ul>
+      </Container>
+    );
   }
 }

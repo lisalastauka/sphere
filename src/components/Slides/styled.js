@@ -3,13 +3,20 @@ import media from './../../styled-components/media';
 import Button, { Group } from '../Button/styled';
 
 export default styled.div`
-  margin-bottom: 70px;
+  ${media.tablet`
+    margin-bottom: 70px;
+  `}
   ${media.desktop`
     margin-bottom: 140px;
   `}
 
+  h2 {
+    ${media.desktop`
+      line-height: 54px;
+    `}
+  }
+
   h2 > span {
-    ${props => props.theme.colored.gradient};
     white-space: nowrap;
   }
 
@@ -19,6 +26,17 @@ export default styled.div`
       margin-bottom: 40px;
     `}
   }
+
+  .changeText li {
+    font-size: ${props => props.theme.fontSize.large};
+    line-height: ${props => props.theme.lineHeight.bitlarger};
+    font-weight: 500;
+    ${media.tablet`
+      letter-spacing: -0.38px;
+      font-size: ${props => props.theme.fontSize.larger};
+      line-height: ${props => props.theme.lineHeight.larger};
+    `}
+  }
 `;
 
 export const Slides = styled.div`
@@ -26,9 +44,11 @@ export const Slides = styled.div`
   margin: auto;
   width: 100%;
   max-width: 720px;
-  height: 340px;
+  margin-top: 45px;
+  height: 400px;
 
   ${media.desktop`
+    margin-top: 0px;
     height: 260px;
   `}
 
@@ -41,6 +61,14 @@ export const Slides = styled.div`
   }
 `;
 
+export const H2 = styled.h2`
+  display: inline-block;
+  margin: 0;
+  ${media.tablet`
+    line-height: 54px;
+  `}
+`;
+
 export const Slide = styled.div`
   position: absolute;
   margin: auto;
@@ -49,43 +77,12 @@ export const Slide = styled.div`
   border-radius: 5px;
   box-shadow: 0px 10px 30px rgba(21, 17, 97, 0.1), 0px 5px 5px rgba(32, 46, 113, 0.1);
   z-index: 3;
-  top: 60px;
+  top: 150px;
   font-size: ${props => props.theme.fontSize.regular};
   font-family: ${props => props.theme.fonts.graphik.medium}, sans-serif;
   ${media.tablet`
-    top: 200px;
-    ${props => props.backward && `
-      top: 0;
-    `}
-    ${props => props.center && `
-      top: 45px;
-    `}
+    top: 170px;
   `}
-  ${props => props.center && `
-    z-index: 2;
-
-    width: 88%;
-    max-width: 640px;
-    margin: 0 6%;
-    top: 15px;
-    h5 {
-      opacity: 0.7;
-    }
-  `}
-
-  ${props => props.backward && `
-    font-size: ${props.theme.fontSize.small};
-    padding: 20px 30px;
-    z-index: 1;
-    width: 75%;
-    max-width: 540px;
-    margin: 0 13%;
-    top: 0;
-    h6 {
-      opacity: 0.5;
-    }
-  `}
-
   > ${Button} {
     ${media.desktop`
       display: none;

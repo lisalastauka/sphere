@@ -23,7 +23,7 @@ export default class Menu extends React.Component {
           <br />
           <Link tel href='tel:88005000305'>8 800 500 03 05</Link>
         </div>
-        <a href="https://sme.bcs-bank.com/login" target="_self">
+        <a href="https://sfera.ru/login" target="_self">
           <Button outline>Вход для пользователей</Button><br/>
         </a>
         <small>Скоро <span style={{opacity: '0.4'}}>{'  '} Демо-доступ</span></small>

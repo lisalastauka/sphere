@@ -1,8 +1,8 @@
 import React from 'react';
-import HeaderContainer from './styled';
+import HeaderContainer, { P } from './styled';
 import ChangeText from '../ChangeText';
 
-const texts = ["предпринимателя", "фрилансера", "владельца кафе", "владельца автосервиса"];
+const texts = ["владельца бизнеса", "фрилансера", "оптовика", "малого бизнеса", "интернет-магазина", "салона красоты", "предпринимателя", "аптеки", "владельца кафе" ];
 
 export default class Header extends React.Component {
   render () {
@@ -10,11 +10,14 @@ export default class Header extends React.Component {
       <HeaderContainer>
         <h1>
           Умный банк для <br />
-          <span><ChangeText texts={texts} /></span>
+          <ChangeText
+            texts={texts}
+            animation='change'
+          />
         </h1>
-        <p>
-          Электронные помощники, добавление счетов других банков, бухгалтерия в&nbsp;одном&nbsp;окне
-        </p>
+        <P className='mobileHide'>
+          Бухгалтерия, финансовая аналитика<br /> и&nbsp;делопроизводство&nbsp;в&nbsp;одном&nbsp;окне.
+        </P>
       </HeaderContainer>
     );
   }

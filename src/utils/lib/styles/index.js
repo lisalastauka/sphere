@@ -22,7 +22,7 @@ var styles = {
   },
 
   shadowOnHover: {
-    boxShadow: '0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4)'
+    boxShadow: '0 45px 100px rgba(14, 21, 47, 0.2), 0 16px 40px rgba(14, 21, 47, 0.2)'
   },
 
   layers: {

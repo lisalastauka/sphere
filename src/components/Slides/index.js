@@ -1,13 +1,13 @@
 import React from 'react';
 import { Row , Col } from 'react-flexbox-grid';
-import Container, { Slides, Slide, Inner } from './styled';
+import Container, { Slides, Slide, Inner, H2 } from './styled';
 import Button, { ButtonGroup } from './../Button';
 import ChangeText from './../ChangeText';
 
 const texts = [
   'бухгалтера',
-  'юриста',
-  'курьера или почты',
+  'кадровика',
+  'финансового аналитика',
   'кадровика'
 ];
 
@@ -41,21 +41,16 @@ const inner = (
 
 export default () => (
   <Container id="slides" >
-    <h2>
-      Можно работать без{' '}
-      <span className='animate-flicker'>
-        <ChangeText texts={texts} />
-      </span>
-    </h2>
+    <H2>Можно работать без&nbsp;</H2> <ChangeText inline texts={texts} animation='change1' />
     <p>
-      Посчитаем налоги и отправим отчетность. Напомним когда <br/> нужно заплатить налоги и взносы, чтобы сэкономить.
+      Посчитаем налоги. Напомним, когда нужно заплатить налоги и&nbsp;взносы, чтобы&nbsp;сэкономить.
     </p>
     <Slides>
-      <Slide className="slide-xs" >
+      <Slide id="slides_1" className="slide-xs" >
         {inner}
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>
-      <Slide className="slide-sm" >
+      <Slide id="slides_2" className="slide-sm" >
         {inner}
         <Button disabled footer type="button">Оплатить</Button>
       </Slide>

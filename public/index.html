@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="rgb(49,109,247)" />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <link rel="preload" href="fonts/graphikLC/GraphikLC-Regular.otf" as="font"  crossorigin="anonymous" >
+    <link rel="preload" href="fonts/graphikLC/GraphikLC-Medium.otf" as="font" crossorigin="anonymous" >
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#3f86f9">
+    <meta name="msapplication-TileColor" content="#3f86f9">
+    <meta name="theme-color" content="#ffffff">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -32,6 +41,43 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6HXBHS"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <meta name="yandex-verification" content="25bcc955d1602ee1" />
+    <meta name="google-site-verification" content="1YwjOKywol3rSU6KEj4WUJNpRPC5NLv8H496RnIJPk4" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll('img[data-src], source[data-src]'));
+
+        if ("IntersectionObserver" in window) {
+          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                console.log('intersecting', entry.target)
+                let lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.srcset = lazyImage.dataset.srcset || lazyImage.dataset.src;
+                lazyImage.removeAttribute('data-src');
+                lazyImageObserver.unobserve(lazyImage);
+              }
+            });
+          });
+
+          lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+          });
+        } else {
+          [].forEach.call(document.querySelectorAll('img[data-src], source[data-src]'), function(img) {
+          img.setAttribute('src', img.getAttribute('data-src'));
+          img.onload = function() {
+            img.removeAttribute('data-src');
+          };
+          });
+        }
+      });
+    </script>
+
+
   </head>
   <body>
     <noscript>
@@ -48,52 +94,61 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6HXBHS"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- /Google Tag Manager -->
+
+    <!-- Для чатика -->
     <script>
       var __threadsDev = false
       var __threadsPrompt = false
       var __threadsVersion = false
     </script>
-<script type="text/javascript">
-!function() {
-       function e() {
-         s("GET", r + "?rnd=" + Math.random(), function(e) {
-           var r = JSON.parse(e);
-           if (t.__threadsVersion && (t.__threadsWidgetVersion = prompt("Version", t.__threadsWidgetVersion || "")), t.__threadsPrompt) {
-             var s = r && r.webchat && r.webchat.clientId;
-             t[s] = prompt("Client ID", t[s])
-           }
-           if (t.__threadsPromptData) {
-             var i = r && r.webchat && r.webchat.clientData;
-             t[i] = prompt("Client data", t[i])
-           }
-           r.webchat && (r.webchat.filename = r.filename), sessionStorage.setItem("__threadsWidget", JSON.stringify(r.webchat));
-           var o = a.createElement("script");
-           o.type = "text/javascript", o.async = !0, o.src = n ? "/app.js" : r.filename;
-           var d = a.getElementsByTagName("script")[0];
-           d ? d.parentNode.insertBefore(o, d) : a.body.appendChild(o)
-         })
-       }
-       var t = window,
-         a = document,
-         n = !!t.__threadsDev,
-         r = n ? "/settings.json" : "/settings.json",
-         s = function() {
-           var e = new XMLHttpRequest;
-           return function(t, a, n, r) {
-             e.onreadystatechange = function() {
-               if (4 === e.readyState)
-                 if (200 === this.status) n(e.response);
-                 else {
-                   if ("function" != typeof r) throw new Error(e.response);
-                   r(e)
-                 }
-             }, e.open(t, a), e.send()
-           }
-         }();
-       "complete" === a.readyState ? e() : t.attachEvent ? t.attachEvent("onload", e) : t.addEventListener("load", e, !1)
-     }();
-</script>
-
+    <script type="text/javascript">
+    !function() {
+          function e() {
+            s("GET", r + "?rnd=" + Math.random(), function(e) {
+              var r = JSON.parse(e);
+              if (t.__threadsVersion && (t.__threadsWidgetVersion = prompt("Version", t.__threadsWidgetVersion || "")), t.__threadsPrompt) {
+                var s = r && r.webchat && r.webchat.clientId;
+                t[s] = prompt("Client ID", t[s])
+              }
+              if (t.__threadsPromptData) {
+                var i = r && r.webchat && r.webchat.clientData;
+                t[i] = prompt("Client data", t[i])
+              }
+              r.webchat && (r.webchat.filename = r.filename), sessionStorage.setItem("__threadsWidget", JSON.stringify(r.webchat));
+              var o = a.createElement("script");
+              o.type = "text/javascript", o.async = !0, o.src = n ? "/app.js" : r.filename;
+              var d = a.getElementsByTagName("script")[0];
+              d ? d.parentNode.insertBefore(o, d) : a.body.appendChild(o)
+            })
+          }
+          var t = window,
+            a = document,
+            n = !!t.__threadsDev,
+            r = n ? "/settings.json" : "/settings.json",
+            s = function() {
+              var e = new XMLHttpRequest;
+              return function(t, a, n, r) {
+                e.onreadystatechange = function() {
+                  if (4 === e.readyState)
+                    if (200 === this.status) n(e.response);
+                    else {
+                      if ("function" != typeof r) throw new Error(e.response);
+                      r(e)
+                    }
+                }, e.open(t, a), e.send()
+              }
+            }();
+          "complete" === a.readyState ? e() : t.attachEvent ? t.attachEvent("onload", e) : t.addEventListener("load", e, !1)
+        }();
+    </script>
+    <!-- /Для чатика -->
 
   </body>
 </html>

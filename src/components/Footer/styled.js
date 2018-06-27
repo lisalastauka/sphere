@@ -4,7 +4,7 @@ import { Col, Row } from 'react-flexbox-grid';
 import Link from '../Link/styled';
 
 export const Footer = styled.div`
-  padding: 20px 0;
+  padding: 20px 0 100px;
   ${media.tablet`
     padding: 75px 0 100px;
   `}

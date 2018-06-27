@@ -48,10 +48,13 @@ export default {
     text03: 0.3,
   },
   size: {
-    giant: 120,
-    desktop: 64,
-    tablet: 48,
-    phone: 30,
+    giant: 120, // 1920
+    bigDesktop: 84, //1024
+    desktop: 64, //1024
+    bigTablet: 55, //880
+    tablet: 48, // 768
+    bigPhone: 38, //608
+    phone: 30, //480
   },
   colored: {
     gradient: '@supports (top:0) {-webkit-background:-webkit-gradient(linear, 272deg, #618ef1, #e6664a 99%, #fbb933);-webkit-background:-webkit-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-moz-background:-moz-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);-o-background:-o-linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background:linear-gradient(272deg, #618ef1, #e6664a 99%, #fbb933);background-clip: text; text-fill-color: transparent;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}'
