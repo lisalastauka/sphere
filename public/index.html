@@ -68,9 +68,10 @@
           });
         } else {
           [].forEach.call(document.querySelectorAll('img[data-src], source[data-src]'), function(img) {
-            console.log('img: ', img);
           img.setAttribute('src', img.getAttribute('data-src'));
           img.setAttribute('srcset', img.getAttribute('data-srcset'));
+          lazyImage.removeAttribute('data-src');
+          lazyImage.removeAttribute('data-srcset');
           });
         }
       });
