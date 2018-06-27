@@ -43,6 +43,9 @@ class Appear extends Component {
               img.onload = () => {
                 this.watcher = inViewport(el, this.setVisible);
               };
+              if(img.complete){
+                this.watcher = inViewport(el, this.setVisible);
+              }
             } else {
               this.watcher = inViewport(el, this.setVisible);
             }
