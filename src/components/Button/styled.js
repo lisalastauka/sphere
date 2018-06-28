@@ -21,6 +21,13 @@ export default styled.button`
     }
   `}
 
+  ${props => props.disabled && props.outline &&`
+    :hover {
+      background: transparent;
+      color: ${props.theme.colors.textBtn};
+    }
+  `}
+
   ${props => props.footer &&`
     background: transparent;
     color: ${props.theme.colors.textBtn};
@@ -113,10 +120,6 @@ export default styled.button`
 
   ${props => props.disabled &&`
     cursor: default;
-    :hover {
-      background: transparent;
-      color: ${props.theme.colors.textBtn};
-    }
   `}
 
   ${props => props.inactive &&`

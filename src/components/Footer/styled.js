@@ -45,7 +45,7 @@ export const Badge = styled.div`
 
 export const ButtonGroup = styled.div`
   margin: 60px 0;
-  button:first-child {
+  >button:first-child {
     float: left;
   }
 `;
