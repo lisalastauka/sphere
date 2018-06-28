@@ -23,9 +23,14 @@ export default () => (
           <Button opaque disabled>
             Доступно<br />в <b>любом&nbsp;браузере</b>
           </Button>
-          <a href="https://play.google.com/store/apps/details?id=ru.bcs.bcs_businessman" target="_blank">
-            <Button opaque>
+          {/* <a href="https://play.google.com/store/apps/details?id=ru.bcs.bcs_businessman" target="_blank"> */}
+            <Button badge opaque disabled>
               <Row>
+                <Badge>
+                  <div>
+                    Скоро
+                  </div>
+                </Badge>
                 <Col xs={0}>
                   <br />
                 </Col>
@@ -37,10 +42,15 @@ export default () => (
                 </Col>
               </Row>
             </Button>
-          </a>
-          <a href="https://itunes.apple.com/us/app/бкс-предприниматель-1-0/id1303458822" target="_blank">
-            <Button opaque>
+          {/* </a> */}
+          {/* <a href="https://itunes.apple.com/us/app/бкс-предприниматель-1-0/id1303458822" target="_blank"> */}
+            <Button badge opaque disabled>
               <Row>
+                <Badge>
+                  <div>
+                    Скоро
+                  </div>
+                </Badge>
                 <Col xs={0}>
                   <br />
                 </Col>
@@ -52,7 +62,7 @@ export default () => (
                 </Col>
               </Row>
             </Button>
-          </a>
+          {/* </a> */}
         </ButtonGroup>
         <p style={{ opacity: '0.8'}}>
           Банковские услуги предоставляются Акционерным обществом «БКС — Инвестиционный Банк», Генеральная лицензия ЦБ РФ № 101 от 15.12.2014 г. Выдана без ограничения срока действия. Официальный сайт http://www.bcs-bank.com.
